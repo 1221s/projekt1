@@ -3,9 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <title>About</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <style type="text/css">
+        *{
+            margin:0px;
+            padding:0px;
+            border:0px solid red;
+            font-family: Lato;
+        }
+        h1{
+            font-size: 2em;
+        }
+        h2{
+            font-size:1.4em;
+        }
+        p{
+
+        }
+
+        #background{
+            background-image: url('img/about-del.png');
+            background-size: contain;
+            display: inline-block;
+            height:2000px;
+            width:100%;
+        }
+        header{
+            float:left;
+            width:100%;
+        }
+        #logo{
+            margin-top:30px;
+            margin-left:30px;
+            float:left;
+        }
+        #logo img{
+            width:280px;
+        }
+        nav{
+            float:left;
+            margin-top:80px;
+            margin-left:150px;
+        }
+        nav li{
+            float:left;
+            list-style-type: none;
+            margin-right:64px;
+        }
+        nav a{
+            font-size:1.2em;
+            color:#000;
+        }
+        nav li:hover{
+            border-bottom:2px solid #000;
+        }
+        main{
+            width:100%;
+            float:left;
+        }
+        section{
+            width:80%;
+            margin:auto;
+        }
+        #team-tendo{
+            text-align: center;
+            margin-top:32px;
+        }
+        .employee{
+            width:21%;
+            float:left;
+            padding:0px 2%;
+        }
+        .employee h2{
+            margin-bottom:8px;
+        }
+        #employee-wrapper{
+            margin-top:64px;
+        }
+        .employee-photo{
+            height:150px;
+            width:150px;
+            margin:auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            border-radius: 50%;
+            margin-bottom:16px;
+        }
+        #sofie-foto{
+            background-image: url("img/sofie.png");
+        }
+        #robin-foto{
+            background-image: url("img/robin.png");
+        }
+        #pontus-foto{
+            background-image: url("img/pontus.png");
+        }
+        #joe-foto{
+            background-image: url("img/joe.png");
+        }
+        .team-text {
+            float:left;
+            text-align: left;
+            margin:auto;
+            margin-top:64px;
+            width:25%;
+            padding:25px;
+        }
+        
+    </style>
 </head>
 
 <body>
+<div id="background">
+
+<header>
+    <div id="logo"><img src="img/logo_blue.png"/></div>
+    <nav>
+        <ul>
+            <a href="#"><li>Tendo</li></a>
+            <a href="#"><li>About us</li></a>
+            <a href="#"><li>Find us</li></a>
+        </ul>
+    </nav>
+</header>
+
+<main style="border:0px solid blue;">
+    <section id="team-tendo">
+        <h1>Team Tendo</h1>
+        <div id="employee-wrapper">
+            <div class="employee">
+                <div class="employee-photo" id="sofie-foto">
+                    <div></div>
+                </div>
+                <h2>Sofie Woge<br/>CEO & Founder</h2>
+                <p>Entrepreneur and designer from Chalmers & Lund's University with a great passion for usability, design for all, and robotics.</p>
+            </div>
+
+            <div class="employee">
+                <div class="employee-photo" id="robin-foto">
+                    <div></div>
+                </div>
+                <h2>Robin Gustafsson<br/>CTO - Mechanics</h2>
+                <p>Mechanical Engineer, expertise within product development and fine mechanics from LTH.</p>
+            </div>
+
+            <div class="employee">
+                <div class="employee-photo" id="pontus-foto">
+                    <div></div>
+                </div>
+                <h2>Pontus Renmarker<br/>VPE - Mechatronics</h2>
+                <p>Mechanical Engineer with an expertise within robotics and mechatronics from LTH.</p>
+            </div>
+
+            <div class="employee">
+                <div class="employee-photo" id="joe-foto">
+                    <div></div>
+                </div>
+                <h2>Joe Sarawut Nielsen<br/>Designer & Engineer</h2>
+                <p>Product design engineer from SDU with experience in user oriented design from e.g. LEGO.</p>
+            </div>
+        </div>
+        <p class="team-text">The strong team behind Tendo works with great passion and has broad competence within the field. Even though Tendo is a newly established company, a wide network has already been established and the development is/has been supported by e.g. NASA (Houston), Ideon in Lund and Odense Robotics.</p>
+        <p class="team-text">Tendo is a part of Odense Robotics and is thereby part of a cluster rewarded with the prestigious EU certificate Golden Label. The team has access to professional support within everything from development and prototyping to business management and matchmaking within the industry.</p>
+    </section>
+
+</main>
+
+
+
+
+
+
+
+
+</div>
 
 </body>
 
