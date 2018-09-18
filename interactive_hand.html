@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Hand</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="maincss.css" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+        #hand-background {
+            background: url('img/info-handske.jpg') no-repeat;
+            height:340px;
+            width:675px;
+            margin:64px auto;
+        }
+        #hand-index{
+            position:absolute;
+            border: 0px solid red;
+            height:30px;
+            width:110px;
+            margin-top:85px;
+            margin-left:16px;
+            display: block;
+        }
+        #hand-index-info{
+            position: absolute;
+            margin-top:-100px;
+            margin-left:-30px;
+            height:30px;
+            width:110px;
+            border: 0px solid red;
+        }
+        #hand-index-info{
+            display: none;
+        }
+        .hand-link:hover + #hand-index-info{
+            display: block;
+        }
+        .hand-link{
+            width: 100%;
+            height:100%;
+            border:3px dotted blue;
+            display: block;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+<div id="background">
+
+<header>
+    <div id="logo"><img src="img/logo_blue.png"/></div>
+    <nav>
+        <ul>
+            <a href="#"><li>Tendo</li></a>
+            <a href="#"><li>About us</li></a>
+            <a href="#"><li>Find us</li></a>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<!--
+    <script type="application/javascript">
+
+        function MouseOver(myInfo) {
+            myInfo.document.getElementById("hand-index-info").style.display = "block";
+        }
+
+        function MouseOut(myInfo) {
+            myInfo.document.getElementById("hand-index-info").style.display = "hidden";
+        }
+    </script>
+-->
+
+    <div id="hand-background">
+        <div id="hand-index"><a href="#" class="hand-link" onmouseover="MouseOver(this);" onmouseout="MouseOut(this);"></a>
+            <div id="hand-index-info" style=""><p><strong>Free fingertips<br/>- sense of touch</strong></p></div>
+        </div>
+
+
+    </div>
+
+
+
+</main>
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+
+</html>
