@@ -25,21 +25,88 @@
       <nav>
           <ul>
               <a href="#"><li>Tendo</li></a>
+              <a href="#"><li>Products</li></a>
               <a href="#"><li>About us</li></a>
               <a href="#"><li>Find us</li></a>
+
+              <p>Dk</p>
           </ul>
       </nav>
   </header>
+  <main>
 
+
+      <script type="application/javascript">
+
+          document.getElementById("hand-index-info").onmouseover = function() {mouseOverIndex()};
+          document.getElementById("hand-index-info").onmouseleave = function() {mouseOutIndex()};
+
+          document.getElementById("hand-electronics-info").onmouseover = function() {mouseOverElectronics()};
+          document.getElementById("hand-electronics-info").onmouseleave = function() {mouseOutElectronics()};
+
+          var handInfo = document.querySelectorAll('hand-info');
+
+          function mouseOverIndex() {
+              document.getElementById("hand-index-info").style.display = "block";
+          }
+          function mouseOutIndex() {
+              handInfo.style.display = "none";
+          }
+
+          function mouseOverElectronics() {
+              document.getElementById("hand-electronics-info").style.display = "block";
+          }
+          function mouseOutElectronics() {
+              handInfo.style.display = "none";
+          }
+      </script>
+
+
+      <div id="hand-background">
+          <!-- De links der lytter efter en mouseOver -->
+          <div class="hand-hover-wrapper">
+              <!-- INDEX FINGER LINK -->
+              <div id="hand-index">
+                  <a href="#" class="hand-link" onmouseover="mouseOverIndex(this);" onmouseleave="mouseOutIndex(this);"></a>
+              </div>
+              <!-- ELECTRONICS LINK -->
+              <div id="hand-electronics">
+                  <a href="#" class="hand-link" onmouseover="mouseOverElectronics(this);" onmouseleave="mouseOutElectronics(this);"></a>
+              </div>
+          </div>
+
+          <div id="hand-info-wrapper">
+              <div id="hand-index-info" class="hand-info" style="">
+                  <p><strong>Free fingertips<br/>- sense of touch</strong></p>
+              </div>
+              <div id="hand-electronics-info" class="hand-info" style="">
+                  <p><strong>Free fingertips<br/>- sense of touch</strong></p>
+              </div>
+          </div>
+
+      </div>
+
+
+
+  </main>
+
+
+
+
+
+
+
+
+  </div>
 
 
 
 
   <div class="footer">
-    <p>Tendo for people
-    <br>Contact:</br>
-    some:
-    robot
+    <p>Tendo for people</p>
+    <p>Contact</p>
+    <p>SoMe</p>
+    <p>robot</p>
   </p>
   </div>
 </body>
