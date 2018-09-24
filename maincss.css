@@ -190,6 +190,7 @@
 
         #right1 {
           text-align:right;
+          
         }
 
         #left1 {
@@ -197,6 +198,42 @@
         }
 
         .newss {
-          width:50%;
+
           text-align:center;
+        }
+
+        .tv2 {
+          width:20%;
+          height:20%;
+          margin:10px;
+        }
+
+        .udogse {
+          width:20%;
+          height:20%;
+          margin:10px;
+        }
+
+        .moot {
+          width:20%;
+          height:20%;
+          margin:10px;
+        }
+
+        .borsen {
+          width:20%;
+          height:20%;
+          margin:10px;
+        }
+
+        .some {
+          width: 25px;
+          height: 25px;
+          margin: 5px;
+        }
+
+        .robotrob {
+          width:100px;
+          height:50px;
+
         }
