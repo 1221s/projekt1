@@ -187,3 +187,11 @@
           background-color:#99d1dc;
           text-align:center;
         }
+
+        #right1 {
+          text-align:right;
+        }
+
+        #left1 {
+          text-align:left;
+        }
