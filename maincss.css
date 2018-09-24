@@ -137,3 +137,12 @@
         .column p:last-child{
             margin-right:0px;
         }
+
+        .footer {
+          position:fixed;
+          left:0;
+          bottom:0;
+          width:100%;
+          background-color:#99d1dc;
+          text-align:center;
+        }
