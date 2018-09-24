@@ -191,21 +191,23 @@
           font-family: Lato;
           float:left;
           max-height:500px;
-          text-align:center;
         }
 
         .footer-text {
           float:left;
-          padding:10px;
-          min-width:300px;
+          min-width:200px;
+          min-height:100px;
+          margin-bottom:50px;
         }
 
         .text-container {
-
-          width:1000px;
-          display:inline-block;
+          display:block;
+          position:relative;
+          width:80%;
           left:20%;
-          margin:auto;
+        }
+        .paragraphfooter {
+          padding-bottom:10px;
         }
 
   .wasteofspace {
@@ -216,18 +218,26 @@
 
         #footer-logo {
           width:300px;
-          margin:auto;
-        }
-        .footer-logo {
-          display:Block
-          overflow:hidden;
-        }
+          display:inline-block;
 
+        }
         .some {
-          width:50px;
-          border-radius:150px;
+          position:relative;
           display:block;
-          float:left;
+          width:50px;
+          padding:5px;
+          float:right;
+          overflow:hidden;
+          right:20%;
+        }
+        .some-text {
+          position:relative;
+          width:100px;
+          padding:5px;
+          float:right;
+          right:20%;
+          font-size:25px;
+          padding-top:10px;
         }
 
   /* about side news */
