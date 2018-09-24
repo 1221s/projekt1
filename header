@@ -9,8 +9,7 @@
   <link href="maincss.css" rel="stylesheet" type="text/css">
 
 <script defer>
-
-    /* When the user clicks on the button,
+    /* When the user hovers over the button,
     toggle between hiding and showing the dropdown content */
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
