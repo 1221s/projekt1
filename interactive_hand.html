@@ -30,6 +30,11 @@
             width:110px;
             border: 0px solid red;
         }
+        #udforsk{
+          position: absolute;
+          font-size: 24px;
+          margin:auto;
+        }
         .hand-info{
             display: none;
         }
@@ -46,13 +51,11 @@
             border-color:#fff;
         }
 
-
-
     </style>
 </head>
 
 <body>
-<div id="background">
+    <div id="background">
 
 <header>
     <div id="logo"><img src="img/logo_blue.png"/></div>
@@ -66,32 +69,32 @@
 </header>
 
 <main>
+   <h2 id="udforsk">Udforsk den interktive hånd</h2>
 
+   <script type="application/javascript">
 
-    <script type="application/javascript">
+      document.getElementById("hand-index-info").onmouseover = function() {mouseOverIndex()};
+      document.getElementById("hand-index-info").onmouseleave = function() {mouseOutIndex()};
 
-        document.getElementById("hand-index-info").onmouseover = function() {mouseOverIndex()};
-        document.getElementById("hand-index-info").onmouseleave = function() {mouseOutIndex()};
+      document.getElementById("hand-electronics-info").onmouseover = function() {mouseOverElectronics()};
+      document.getElementById("hand-electronics-info").onmouseleave = function() {mouseOutElectronics()};
 
-        document.getElementById("hand-electronics-info").onmouseover = function() {mouseOverElectronics()};
-        document.getElementById("hand-electronics-info").onmouseleave = function() {mouseOutElectronics()};
+      var handInfo = document.querySelectorAll('hand-info');
 
-        var handInfo = document.querySelectorAll('hand-info');
+      function mouseOverIndex() {
+          document.getElementById("hand-index-info").style.display = "block";
+      }
+      function mouseOutIndex() {
+          handInfo.style.display = "none";
+      }
 
-        function mouseOverIndex() {
-            document.getElementById("hand-index-info").style.display = "block";
-        }
-        function mouseOutIndex() {
-            handInfo.style.display = "none";
-        }
-
-        function mouseOverElectronics() {
-            document.getElementById("hand-electronics-info").style.display = "block";
-        }
-        function mouseOutElectronics() {
-            handInfo.style.display = "none";
-        }
-    </script>
+      function mouseOverElectronics() {
+          document.getElementById("hand-electronics-info").style.display = "block";
+      }
+      function mouseOutElectronics() {
+          handInfo.style.display = "none";
+      }
+  </script>
 
 
     <div id="hand-background">
@@ -101,32 +104,18 @@
             <div id="hand-index">
                 <a href="#" class="hand-link" onmouseover="mouseOverIndex(this);" onmouseleave="mouseOutIndex(this);"></a>
             </div>
-            <!-- ELECTRONICS LINK -->
-            <div id="hand-electronics">
-                <a href="#" class="hand-link" onmouseover="mouseOverElectronics(this);" onmouseleave="mouseOutElectronics(this);"></a>
-            </div>
+
         </div>
 
         <div id="hand-info-wrapper">
             <div id="hand-index-info" class="hand-info" style="">
                 <p><strong>Free fingertips<br/>- sense of touch</strong></p>
             </div>
-            <div id="hand-electronics-info" class="hand-info" style="">
-                <p><strong>Free fingertips<br/>- sense of touch</strong></p>
-            </div>
         </div>
 
     </div>
 
-
-
 </main>
-
-
-
-
-
-
 
 
 </div>
