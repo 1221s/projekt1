@@ -18,7 +18,54 @@ p{
 strong{
             font-weight:400;
         }
+<<<<<<< HEAD
 #background{
+=======
+
+        #hand-background {
+            background: url('img/tendo-soft-glove.jpg') no-repeat;
+            height:340px;
+            width:675px;
+            margin:64px auto;
+        }
+        #hand-index{
+            position:absolute;
+            border: 0px solid red;
+            height:30px;
+            width:110px;
+            margin-top:98px;
+            margin-left:6px;
+            display: block;
+        }
+        #hand-index-info{
+            position: absolute;
+            margin-top:30px;
+            margin-left:-30px;
+            height:30px;
+            width:110px;
+            border: 0px solid red;
+        }
+        .hand-info{
+            display: none;
+        }
+        .hand-link:hover + #hand-index-info{
+            /*display: block;*/
+        }
+        .hand-link{
+            width: 100%;
+            height:100%;
+            border:3px dotted blue;
+            display: block;
+        }
+        .hand-link:hover{
+            border-color:#fff;
+        }
+
+
+
+
+        #background{
+>>>>>>> bf1ec07530d3e49a5c592d7142519b8b350a7fc2
             background-image: url('img/about-del.png');
             background-size: contain;
             display: inline-block;
@@ -196,4 +243,63 @@ section{
         }
         .column p:last-child{
             margin-right:0px;
+        }
+
+        .footer {
+          position:fixed;
+          left:0;
+          bottom:0;
+          width:100%;
+          background-color:#99d1dc;
+          text-align:center;
+        }
+
+        #right1 {
+          text-align:right;
+          
+        }
+
+        #left1 {
+          text-align:left;
+        }
+
+        .newss {
+
+          text-align:center;
+        }
+
+        .tv2 {
+          width:20%;
+          height:20%;
+          margin:10px;
+        }
+
+        .udogse {
+          width:20%;
+          height:20%;
+          margin:10px;
+        }
+
+        .moot {
+          width:20%;
+          height:20%;
+          margin:10px;
+        }
+
+        .borsen {
+          width:20%;
+          height:20%;
+          margin:10px;
+        }
+
+        .some {
+          width: 25px;
+          height: 25px;
+          margin: 5px;
+        }
+
+        .robotrob {
+          width:100px;
+          height:50px;
+
         }
