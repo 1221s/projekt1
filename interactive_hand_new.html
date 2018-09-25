@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Hand</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="maincss.css" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+        #hand-background {
+            background: url('img/tendo-soft-glove.jpg') no-repeat;
+            height:340px;
+            width:675px;
+            margin:64px auto;
+        }
+        #hand-index{
+            position:absolute;
+            height:30px;
+            width:110px;
+            margin-top:98px;
+            margin-left:6px;
+            display: block;
+        }
+        #hand-index-info{
+            position: absolute;
+            margin-top:30px;
+            margin-left:-30px;
+            height:35px;
+            width:85px;
+        }
+        .overskrift{
+          position: relative;
+          text-align: center;
+          background-color: inherit;
+          font-size: 24px;
+          font-weight: bold;
+        }
+        .hand-info{
+            display: none;
+        }
+        .hand-link:hover + #hand-index-info{
+            /*display: block;*/
+        }
+        .hand-link{
+            width: 100%;
+            height:100%;
+            border:3px dotted #ee7e32;
+            display: block;
+        }
+        .hand-link:hover{
+            border-color:#48b3aa;
+        }
+
+        #interactive-1{
+          width: 65px;
+          left: 18px;
+          position: absolute;
+        }
+
+        #interactive-2{
+          position: absolute;
+          top: 50px;
+          left: 150px;
+          width: 78px;
+          height: 40px;
+        }
+
+        #interactive-3{
+          position: absolute;
+          top: 106px;
+          left: 247px;
+          width: 89px;
+          height: 50px;
+
+        }
+        #interactive-4{
+          position: absolute;
+          left: 444px;
+          top: -12px;
+          height: 71px;
+          width: 116px;
+        }
+
+        #interactive-5{
+          position: absolute;
+          left: 582px;
+          width: 46px;
+          height: 35px;
+          top: -24px;
+        }
+
+        #text-1{
+          position: absolute;
+          top: -43px;
+        }
+
+        #text-2{
+          position: absolute;
+          left: 123px;
+          top: 94px;
+          width: 115px;
+        }
+        #text-3{
+          position: absolute;
+          left: 276px;
+          top: 163px;
+        }
+
+        #text-4{
+          position: absolute;
+          left: 425px;
+          top: -52px;
+        }
+
+        #text-5{
+          position: absolute;
+          left: 572px;
+          top: -63px;
+          width: 60px;
+        }
+
+        #text-6{
+          position: absolute;
+          top: -92px;
+          left: 240px;
+          width: 92px;
+        }
+
+        .info-text{
+          visibility: hidden;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="background">
+
+<header>
+    <div id="logo"><img src="img/logo_blue.png"/></div>
+    <nav>
+        <ul>
+            <a href="#"><li>Tendo</li></a>
+            <a href="#"><li>About us</li></a>
+            <a href="#"><li>Find us</li></a>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+   <div class="overskrift">
+     <h2>Udforsk Tendo handske</h2>
+   </div>
+
+   <script type="application/javascript">
+/*
+      document.getElementById("hand-index-info").onmouseover = function() {mouseOverIndex()};
+      document.getElementById("hand-index-info").onmouseleave = function() {mouseOutIndex()};
+
+      document.getElementById("hand-electronics-info").onmouseover = function() {mouseOverElectronics()};
+      document.getElementById("hand-electronics-info").onmouseleave = function() {mouseOutElectronics()};
+
+      var handInfo = document.querySelectorAll('hand-info');
+*/
+      function mouseOverIndex(caller) {
+        var text;
+        if(caller.id == "interactive-1"){
+          text = document.getElementById("text-1");
+        }
+        else if(caller.id == "interactive-2"){
+          text = document.getElementById("text-2");
+        }
+        else if(caller.id == "interactive-3"){
+          text = document.getElementById("text-3");
+        }
+        else if(caller.id == "interactive-4"){
+          text = document.getElementById("text-4");
+        }
+        else if(caller.id == "interactive-5"){
+          text = document.getElementById("text-5");
+        }
+        text.style.visibility = "visible";
+          //document.getElementById("hand-index-info").style.display = "block";
+      }
+      function mouseOutIndex(caller) {
+        var text;
+        if(caller.id == "interactive-1"){
+          text = document.getElementById("text-1");
+        }
+        else if(caller.id == "interactive-2"){
+          text = document.getElementById("text-2");
+        }
+        else if(caller.id == "interactive-3"){
+          text = document.getElementById("text-3");
+        }
+        else if(caller.id == "interactive-4"){
+          text = document.getElementById("text-4");
+        }
+        else if(caller.id == "interactive-5"){
+          text = document.getElementById("text-5");
+        }
+        text.style.visibility = "hidden";
+          //handInfo.style.display = "none";
+      }
+/*
+      function mouseOverElectronics() {
+          document.getElementById("hand-electronics-info").style.display = "block";
+      }
+      function mouseOutElectronics() {
+          handInfo.style.display = "none";
+      }
+      */
+  </script>
+
+
+    <div id="hand-background">
+
+        <div class="hand-hover-wrapper">
+            <!-- INDEX FINGER LINK -->
+            <div id="hand-index">
+                <a href="#" id="interactive-1" class="hand-link" onmouseover="mouseOverIndex(this);" onmouseleave="mouseOutIndex(this);"></a>
+                <a href="#" id="interactive-2" class="hand-link" onmouseover="mouseOverIndex(this);" onmouseleave="mouseOutIndex(this);"></a>
+                <a href="#" id="interactive-3" class="hand-link" onmouseover="mouseOverIndex(this);" onmouseleave="mouseOutIndex(this);"></a>
+                <a href="#" id="interactive-4" class="hand-link" onmouseover="mouseOverIndex(this);" onmouseleave="mouseOutIndex(this);"></a>
+                <a href="#" id="interactive-5" class="hand-link" onmouseover="mouseOverIndex(this);" onmouseleave="mouseOutIndex(this);"></a>
+
+                <div id="text-1" class="info-text">Åbne fingerspidser</div>
+                <div id="text-2" class="info-text">Kunstige sener</div>
+                <div id="text-3" class="info-text">Blødt plastik</div>
+                <div id="text-4" class="info-text">Intelligente Sensorer</div>
+                <div id="text-5" class="info-text">Nem at oplade</div>
+                <div id="text-6" class="info-text-free">Vejer kun 127g</div>
+
+
+
+            </div>
+
+        </div>
+
+        <div id="hand-info-wrapper">
+        </div>
+
+    </div>
+
+</main>
+
+
+</div>
+
+</body>
+
+</html>
