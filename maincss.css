@@ -65,7 +65,7 @@
             background-image: url('img/about-del.png');
             background-size: contain;
             display: inline-block;
-            height:2000px;
+            /*height:2000px;*/
             width:100%;
         }
         header{
@@ -271,4 +271,19 @@
         }
         .news {
 
+        }
+
+    /*  Links/implementering af header.html og footer.html  */
+        object:focus {
+            outline: none;
+        }
+        .linked-object{
+            float:left;
+            width:100%;
+        }
+        #linked-header.linked-object {
+            height:500px;
+        }
+        #linked-footer.linked-object {
+            height:285px;
         }

@@ -9,7 +9,7 @@
 <title>Tendo</title>
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <link href="maincss.css" rel="stylesheet" type="text/css">
-	
+<link rel="import" href="header.html">
 
 <style>
 </style>
@@ -19,8 +19,24 @@
 
 </head>
 <body>
+<div id="container"></div>
+<script type="application/javascript">
+    var link = document.querySelector('link[rel="import"]');
+
+    // Clone the <template> in the import.
+    var template = link.import.querySelector('template');
+    var clone = document.importNode(template.content, true);
+
+    document.querySelector('#container').appendChild(clone);
+</script>
+
+<!--
+<object data="header.html" class="linked-object" id="linked-header"></object>
+-->
+
+<!--
 <div class="wasteofspace">thingy </div>
-	
+-->
 	
 	
 <!-- slider section eventuelt> -->
@@ -36,7 +52,7 @@
 <!-- slider section eventuelt> -->
 	
 	
-	
+<!-- GAMMEL FOOTER
 <div class="footer">
   <div class="text-container">
 
@@ -78,6 +94,9 @@
   </div>
   </p>
 
+SLUT PÅ GAMMEL FOOTER -->
+
+<object data="footer.html" class="linked-object" id="linked-footer"></object>
   </div>
 </body>
 
