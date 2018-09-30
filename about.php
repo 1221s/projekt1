@@ -26,7 +26,7 @@
                 <div class="employee-photo" id="sofie-foto">
                     <div class="color-overlay"></div>
                 </div>
-                <h2><strong>Sofie Woge</strong><br/>CEO & Founder</h2>
+                <h3><strong>Sofie Woge</strong><br/>CEO & Founder</h3>
                 <p>Entrepreneur and designer from Chalmers & Lund's University with a great passion for usability, design for all, and robotics.</p>
             </div>
 
@@ -34,7 +34,7 @@
                 <div class="employee-photo" id="robin-foto">
                     <div class="color-overlay"></div>
                 </div>
-                <h2><strong>Robin Gustafsson</strong><br/>CTO - Mechanics</h2>
+                <h3><strong>Robin Gustafsson</strong><br/>CTO - Mechanics</h3>
                 <p>Mechanical Engineer, expertise within product development and fine mechanics from LTH.</p>
             </div>
 
@@ -42,7 +42,7 @@
                 <div class="employee-photo" id="pontus-foto">
                     <div class="color-overlay"></div>
                 </div>
-                <h2><strong>Pontus Renmarker</strong><br/>VPE - Mechatronics</h2>
+                <h3><strong>Pontus Renmarker</strong><br/>VPE - Mechatronics</h3>
                 <p>Mechanical Engineer with an expertise within robotics and mechatronics from LTH.</p>
             </div>
 
@@ -50,7 +50,7 @@
                 <div class="employee-photo" id="joe-foto">
                     <div class="color-overlay"></div>
                 </div>
-                <h2><strong>Joe Sarawut Nielsen</strong><br/>Designer & Engineer</h2>
+                <h3><strong>Joe Sarawut Nielsen</strong><br/>Designer & Engineer</h3>
                 <p>Product design engineer from SDU with experience in user oriented design from e.g. LEGO.</p>
             </div>
         </div>

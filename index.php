@@ -10,40 +10,39 @@
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
  <link href="maincss.css" rel="stylesheet" type="text/css">
 
-<script defer>
-
-    /* When the user clicks on the button,
-    toggle between hiding and showing the dropdown content */
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
-
-    // Close the dropdown menu if the user clicks outside of it
-    window.onMouseOver = function(event) {
-      if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
+    <script defer>
+        /* When the user hovers over the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
         }
-      }
-    }
 
-</script>
+        // Close the dropdown menu if the user clicks outside of it
+        window.onMouseOver = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+    </script>
 
 </head>
   
 <body>
-  <header id="header">
+  <header>
       <?php include("header.html"); ?>
   </header>
 
 <main id="index-main">
 
-    <!-- slider section eventuelt>
+    <!-- slider section eventuelt
     <section id="home-section" class="slider">
         <ul class="slider-carousel" id="slider-carousel">
             <div id="slider-container" class="container">
@@ -53,15 +52,14 @@
             </div>
         </ul>
     </section>-->
-    <!-- slider section eventuelt> -->
+    <!-- slider section eventuelt -->
 
     <section class="index-maintext">
-      <h1 class="index-big-header">Gør det du altid har gjort</h2>
+      <h1 class="index-big-header">Gør det du altid har gjort</h1>
         <p>Tendo er et blødt robot exoskelet – en handske, som styrker dit greb.
           Tendo dækker kun din tommelfinger og pegefinger, samt lidt af underarmen, hvor batteriet er placeret. Handsken er let, og kan være under ærmet.
         </p>
 
-      <section>
         <ul class="icon-list">
           <li class="icon-list-item">
           <img src="img/ok-ikon.png" alt="index icon" class="index-icon">
@@ -77,11 +75,9 @@
     </li>
 
         </ul>
-      </section>
     </section>
 
     <section class="index-maintext">
-  <main>
 
    <div class="overskrift">
      <h2>Udforsk Tendo handsken</h2>
@@ -177,7 +173,6 @@
     </section>
 
     <section class="index-maintext">
-      <h1 class="index-big-header">Om Tendo </h1>
         <h2>Mission</h2>
         <p>Her skal der stå noget om, hvad Tendos mission er</p>
     </section>

@@ -7,13 +7,15 @@
         }
         h1{
             font-size: 2.8em;
+            color:RGB(238,126,50);
         }
         h2{
-            font-size:1.2em;
-
+            font-size:2em;
+            font-weight:400;
+            color:RGB(238,126,50);
         }
         p{
-
+            font-size: 1.2em;
         }
         strong{
             font-weight:400;
@@ -79,6 +81,8 @@
         #logo img{
             width:280px;
         }
+
+        /* GLOBAL NAVIGATION
         nav{
             float:left;
             margin-top:80px;
@@ -96,16 +100,34 @@
         nav li:hover{
             border-bottom:2px solid #000;
         }
+        */
+
         main{
             width:100%;
             float:left;
-            padding-top:50px;
-            padding-bottom: 50px;
+        }
+        main:after{
+
         }
         section{
             width:80%;
-            margin:auto;
+            margin:100px auto;
+            -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.12);
+            -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.12);
+            box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.12);
+            clear:both;
+            overflow: hidden;
+            padding:48px 3%;
         }
+
+        section p{
+            line-height:1.4em;
+        }
+
+        section h2{
+            text-align: center;
+        }
+
         #team-tendo{
             text-align: center;
             margin-top:32px;
@@ -115,8 +137,14 @@
             float:left;
             padding:0px 2%;
         }
-        .employee h2{
-            margin-bottom:8px;
+        .employee p{
+            font-size:initial;
+            padding-top:8px;
+        }
+        .employee h3{
+            padding:6px 0px;
+            border-top:1px solid black;
+            border-bottom:1px solid black;
         }
         .employee strong{
             font-size:inherit;
@@ -176,7 +204,6 @@
 
         /*  header */
                 header{
-                            position:absolute;
                             width:100%;
                             float:left;
                             height:150px;
@@ -249,7 +276,7 @@
                   display:inline-block;
                   width:40px;
                   height:300px;
-                  position:inherit;
+                  position:absolute;
                   right:15px;
                   top:15px;
                 }
@@ -316,34 +343,26 @@
           padding-top:10px;
         }
 
-    /*  Links/implementering af header.html og footer.html  */
-        object:focus {
-            outline: none;
+        .footer p{
+            font-size:1em;
         }
-        .linked-object{
-            float:left;
-            width:100%;
-        }
-        #linked-header.linked-object {
-            height:500px;
-        }
-        #linked-footer.linked-object {
-            height:285px;
+        .footer h2{
+            color:initial;
         }
 
     /* main index */
 
     #index-main {
-      position:absolute;
-      min-height: 700px;
       position:relative;
-      padding-bottom:10px;
-      max-width:90%;
-      left:5%;
-      margin-top:150px;
+      width:100%;
       margin-bottom:50px;
+
     }
 
+    .index-maintext p{
+        max-width:600px;
+        margin:auto;
+    }
 
     .index-maintext h2 {
         padding-top:10px;
@@ -375,12 +394,14 @@
     position: relative;
     text-align: center;
     background-color: inherit;
+      /*
     font-size: 24px;
     font-weight: bold;
+    */
   }
   .index-big-header {
     text-align:center;
-    margin-bottom:5px;
+    margin-bottom:12px;
   }
   .hand-info{
       display: none;
@@ -487,12 +508,14 @@
 }
 
   .icon-list-item p {
+      width:100%;
     margin:auto;
+      text-align: center;
   }
 
     .index-icon {
       max-width:100%;
-      padding:10px;
+      padding:10px 0px;
     }
 
     .index-maintext p {
