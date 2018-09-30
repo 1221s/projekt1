@@ -35,27 +35,7 @@
 </head>
 <body>
   <header id="header">
-  <div id="logo"><a href="index.html"><img src="img/logo_blue.png"></a></div>
-    <ul class="nav">
-    <li><a href="index.html">Hjem</a></li>
-    <li class="dropdown">
-      <a href="produkter.html"><div onMouseOver="myFunction()" class="dropbtn">Produkter</div>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="#">Tendo Handsken</a>
-        <a href="#">Tendo Foden</a>
-        <a href="#">Tendo Benet</a>
-      </div>
-    </a></li>
-    <li><a href="findus.html">Tendo</a></li>
-    <li><a href="findus.html">Kontakt</a></li>
-    <li> </li>
-
-  </ul>
-  <div class="language-container">
-    <img src="img/danish.png" class="languageimg" alt="flag">
-    <img src="img/england.png" class="languageimg" alt="flag">
-    <img src="img/norway.png" class="languageimg" alt="flag">
-  </div>
+      <?php include("header.html"); ?>
   </header>
 
 <main id="index-main">
@@ -207,30 +187,12 @@
 
 </main>
 
+  <footer>
+      <?php include("footer.html"); ?>
+  </footer>
+
 <div class="footer">
-  <div class="text-container">
-    <div id="left1" class="footer-text">
-       <h2>Contact:</h2>
-       <p>Email:</p>
-       <p >info@tendoforpeople.se </p>
-       <p>Phone:</p>
-        <p>(+46) 073-3310414</p>
-    </div>
 
-    <div id="right1" class="footer-text">
-    <h2>Address:</h2>
-    <p>Stjerneskibet</p>
-    <p>Havnegade 29</p>
-    <p>5000 Odense C</p>
-    <p>Denmark</p>
-  </div>
-
-  </div>
-  <div class="footer-img">
-
-    <a href="https://www.instagram.com/tendoforpeople/"><img src="img/instagram.png" alt="Instagram logo" class="some" ></a>
-    <a href="https://www.facebook.com/tendoforpeople/"><img src="img/facebook.png" alt="facebook logo" class="some" ></a>
-    <p class="some-text">Følg os:</p>
   </div>
 </body>
 

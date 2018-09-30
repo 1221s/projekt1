@@ -15,15 +15,7 @@
 <body>
 
 <header>
-    <div id="logo"><img src="img/logo_blue.png"/></div>
-    <nav>
-        <ul>
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>Products</li></a>
-            <a href="#"><li>Tendo</li></a>
-            <a href="#"><li>Contact</li></a>
-        </ul>
-    </nav>
+    <?php include("header.html"); ?>
 </header>
 
 <main>
@@ -100,10 +92,7 @@
 </main>
 
 <footer>
-    Placeholder for footer
-    <div class="footer">
-      <p>Tendo for people</p>
-    </div>
+    <?php include("footer.html"); ?>
 </footer>
 
 </body>

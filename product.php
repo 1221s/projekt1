@@ -20,7 +20,9 @@
 
 
 <body>
-<header>Placeholder for header</header>
+<header>
+    <?php include("header.html"); ?>
+</header>
 
 <main>
     <section>
@@ -29,7 +31,9 @@
     </section>
 </main>
 
-<footer>Placeholder for footer</footer>
+<footer>
+    <?php include("footer.html"); ?>
+</footer>
 
 </body>
   
