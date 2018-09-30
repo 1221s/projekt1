@@ -6,7 +6,9 @@
   <meta name="keywords" content="Tendo, Tendoforpeople, exosceleton, soft glove">
   <meta name="author" content="Tendoforpeople">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="maincss.css" rel="stylesheet" type="text/css">
+<title>Tendo</title>
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+ <link href="maincss.css" rel="stylesheet" type="text/css">
 
 <script defer>
 
@@ -33,6 +35,7 @@
 </script>
 
 </head>
+  
 <body>
   <header id="header">
       <?php include("header.html"); ?>
@@ -191,9 +194,6 @@
       <?php include("footer.html"); ?>
   </footer>
 
-<div class="footer">
-
-  </div>
 </body>
 
 </html>
