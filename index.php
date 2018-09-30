@@ -8,96 +8,192 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tendo</title>
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-<link href="maincss.css" rel="stylesheet" type="text/css">
-<link rel="import" href="header.html">
+ <link href="maincss.css" rel="stylesheet" type="text/css">
 
-<style>
-</style>
-	
-	<!-- script> -->
-	<script src="script.js"></script>
+<script defer>
 
-</head>
-<body>
-<div id="container"></div>
-<script type="application/javascript">
-    var link = document.querySelector('link[rel="import"]');
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
 
-    // Clone the <template> in the import.
-    var template = link.import.querySelector('template');
-    var clone = document.importNode(template.content, true);
+    // Close the dropdown menu if the user clicks outside of it
+    window.onMouseOver = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
 
-    document.querySelector('#container').appendChild(clone);
 </script>
 
-<!--
-<object data="header.html" class="linked-object" id="linked-header"></object>
--->
+</head>
+  
+<body>
+  <header id="header">
+      <?php include("header.html"); ?>
+  </header>
 
-<!--
-<div class="wasteofspace">thingy </div>
--->
-	
-	
-<!-- slider section eventuelt> -->
-<section id="home-section" class="slider">
-	<ul class="slider-carousel" id="slider-carousel">
-		<div id="slider-container" class="container">
-	        	<img id="1" class="visible-foto" src="img/slider1.jpg"  alt="tendoforpeople">
-			<img id="2" class="hidden-foto"  src="img/slider2.jpg" alt="tendo robothandske">
-			<img id="3" class="hidden-foto"  src="img/slider3.jpg"  alt="tendo">
-		</div>
-	</ul>
-</section>
-<!-- slider section eventuelt> -->
-	
-	
-<!-- GAMMEL FOOTER
-<div class="footer">
-  <div class="text-container">
+<main id="index-main">
+
+    <!-- slider section eventuelt>
+    <section id="home-section" class="slider">
+        <ul class="slider-carousel" id="slider-carousel">
+            <div id="slider-container" class="container">
+                    <img id="1" class="visible-foto" src="img/slider1.jpg"  alt="tendoforpeople">
+                <img id="2" class="hidden-foto"  src="img/slider2.jpg" alt="tendo robothandske">
+                <img id="3" class="hidden-foto"  src="img/slider3.jpg"  alt="tendo">
+            </div>
+        </ul>
+    </section>-->
+    <!-- slider section eventuelt> -->
+
+    <section class="index-maintext">
+      <h1 class="index-big-header">Gør det du altid har gjort</h2>
+        <p>Tendo er et blødt robot exoskelet – en handske, som styrker dit greb.
+          Tendo dækker kun din tommelfinger og pegefinger, samt lidt af underarmen, hvor batteriet er placeret. Handsken er let, og kan være under ærmet.
+        </p>
+
+      <section>
+        <ul class="icon-list">
+          <li class="icon-list-item">
+          <img src="img/ok-ikon.png" alt="index icon" class="index-icon">
+          <p> Styrker grebet for mennesker med nedsat gribeevne.</p>
+        </li>
+        <li class="icon-list-item">
+        <img src="img/drop-ikon.png" alt="index icon" class="index-icon">
+        <p> Den nederste del tåler vand og kan vaskes.</p>
+      </li>
+      <li class="icon-list-item">
+      <img src="img/hjerte-ikon.png" alt="index icon" class="index-icon">
+      <p> Handsken er specielt fremstillet til dig</p>
+    </li>
+
+        </ul>
+      </section>
+    </section>
+
+    <section class="index-maintext">
+  <main>
+
+   <div class="overskrift">
+     <h2>Udforsk Tendo handsken</h2>
+   </div>
+
+   <script type="application/javascript">
+/*
+      document.getElementById("hand-index-info").onmouseover = function() {mouseOverIndex()};
+      document.getElementById("hand-index-info").onmouseleave = function() {mouseOutIndex()};
+      document.getElementById("hand-electronics-info").onmouseover = function() {mouseOverElectronics()};
+      document.getElementById("hand-electronics-info").onmouseleave = function() {mouseOutElectronics()};
+      var handInfo = document.querySelectorAll('hand-info');
+*/
+      function mouseOverIndex(caller) {
+        var text;
+        if(caller.id == "interactive-1"){
+          text = document.getElementById("text-1");
+        }
+        else if(caller.id == "interactive-2"){
+          text = document.getElementById("text-2");
+        }
+        else if(caller.id == "interactive-3"){
+          text = document.getElementById("text-3");
+        }
+        else if(caller.id == "interactive-4"){
+          text = document.getElementById("text-4");
+        }
+        else if(caller.id == "interactive-5"){
+          text = document.getElementById("text-5");
+        }
+        text.style.visibility = "visible";
+          //document.getElementById("hand-index-info").style.display = "block";
+      }
+      function mouseOutIndex(caller) {
+        var text;
+        if(caller.id == "interactive-1"){
+          text = document.getElementById("text-1");
+        }
+        else if(caller.id == "interactive-2"){
+          text = document.getElementById("text-2");
+        }
+        else if(caller.id == "interactive-3"){
+          text = document.getElementById("text-3");
+        }
+        else if(caller.id == "interactive-4"){
+          text = document.getElementById("text-4");
+        }
+        else if(caller.id == "interactive-5"){
+          text = document.getElementById("text-5");
+        }
+        text.style.visibility = "hidden";
+          //handInfo.style.display = "none";
+      }
+/*
+      function mouseOverElectronics() {
+          document.getElementById("hand-electronics-info").style.display = "block";
+      }
+      function mouseOutElectronics() {
+          handInfo.style.display = "none";
+      }
+      */
+  </script>
 
 
-<div class="footer-logo">
-  <img src="img/whiterob.png" alt="tendo robot white" id="footer-logo">
-</div>
+    <div id="hand-background">
 
-    <div id="left1" class="footer-text">
-       <p>Contact:</p>
-       <p>info@tendoforpeople.se </p>
-        <p>(+46) 073-3310414</p>
+        <div class="hand-hover-wrapper">
+            <!-- INDEX FINGER LINK -->
+            <div id="hand-index">
+                <a id="interactive-1" class="hand-link" onmouseover="mouseOverIndex(this);" onmouseleave="mouseOutIndex(this);"></a>
+                <a id="interactive-2" class="hand-link" onmouseover="mouseOverIndex(this);" onmouseleave="mouseOutIndex(this);"></a>
+                <a id="interactive-3" class="hand-link" onmouseover="mouseOverIndex(this);" onmouseleave="mouseOutIndex(this);"></a>
+                <a id="interactive-4" class="hand-link" onmouseover="mouseOverIndex(this);" onmouseleave="mouseOutIndex(this);"></a>
+                <a id="interactive-5" class="hand-link" onmouseover="mouseOverIndex(this);" onmouseleave="mouseOutIndex(this);"></a>
+
+                <div id="text-1" class="info-text">Åbne fingerspidser</div>
+                <div id="text-2" class="info-text">Kunstige sener</div>
+                <div id="text-3" class="info-text">Blødt plastik</div>
+                <div id="text-4" class="info-text">Intelligente Sensorer</div>
+                <div id="text-5" class="info-text">Nem at oplade</div>
+                <div id="text-6" class="info-text">Vejer kun 127g</div>
+
+
+
+            </div>
+
+        </div>
+
+        <div id="hand-info-wrapper">
+        </div>
+
     </div>
+    </section>
 
-<<<<<<< HEAD
-    
-    <div class="footer-img">
-=======
-      <div id="right1">
-    <p>Address:</p>
-    <p>Stjerneskibet</p>
-    <p>Havnegade 29</p>
-    <p>5000 Odense C</p>
-    <p>Denmark</p>
->>>>>>> 359fa79b34992cf8af6a24763dd01f7815ab0907
+    <section class="index-maintext">
+      <h1 class="index-big-header">Om Tendo </h1>
+        <h2>Mission</h2>
+        <p>Her skal der stå noget om, hvad Tendos mission er</p>
+    </section>
 
-      <a href="https://www.instagram.com/tendoforpeople/"><img src="img/instagram.png" alt="Instagram logo" class="some" ></a>
-      <a href="https://www.facebook.com/tendoforpeople/"><img src="img/facebook.png" alt="facebook logo" class="some" ></a>
-    </div>
+    <section class="index-maintext">
+        <h2>Testimonials</h2>
+        <p>Her skal der stå, hvad folk siger om Tendo</p>
+    </section>
 
 
-      <div id="right1" class="footer-text">
-        <p>Adress:</p>
-        <p>Stjerneskibet</p>
-        <p>Havnegade 29</p>
-        <p>5000 Odense C</p>
-        <p>Denmark</p>
-      </div>
-  </div>
-  </p>
+</main>
 
-SLUT PÅ GAMMEL FOOTER -->
+  <footer>
+      <?php include("footer.html"); ?>
+  </footer>
 
-<object data="footer.html" class="linked-object" id="linked-footer"></object>
-  </div>
 </body>
 
 </html>

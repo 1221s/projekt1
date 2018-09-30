@@ -6,18 +6,21 @@
     <meta name="keywords" content="about, Tendo team, Sofie Woge">
     <meta name="author" content="Tendoforpeople">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Tendo | About</title>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="maincss.css" rel="stylesheet" type="text/css">
 
 </head>
 
 <body>
-<object data="header.html" class="linked-object" id="linked-header"></object>
 
-<main style="">
+<header>
+    <?php include("header.html"); ?>
+</header>
+
+<main>
     <section id="team-tendo">
-        <h1>Team Tendo</h1>
+        <h2>Team Tendo</h2>
         <div id="employee-wrapper">
             <div class="employee">
                 <div class="employee-photo" id="sofie-foto">
@@ -56,30 +59,41 @@
             <p class="team-text">Tendo is a part of Odense Robotics and is thereby part of a cluster rewarded with the prestigious EU certificate Golden Label. The team has access to professional support within everything from development and prototyping to business management and matchmaking within the industry.</p>
         </div>
     </section>
+  
+    <section>
+        <h2>Videomateriale</h2>
+        <p>Her skal være videomateriale om Tendo</p>
+    </section>
+
+    <section class="news">
+        <h2>Omtale</h2>
+        <a href="https://www.tv2fyn.dk/nyheder/15-12-2017/1930/robotudvikler-har-faet-millioner-til-robothandske?autoplay=1#player"><img src="tv2fyn.png" alt="tv2 fyn logo" class="tv2"></a>
+        <a href="https://ipaper.ipapercms.dk/DSB/udogse/2018/ud-se-september/?page=64/"><img src="udogse.jpg" alt="Ud og se logo" class="udogse"></a>
+        <br>
+        <a href="https://vimeo.com/252302663"><img src="moot.jpg" alt="moot logo" class="moot"></a>
+        <a href="http://borsen.dk/nyheder/avisen/artikel/11/167376/artikel.html?hl=YToxOntpOjA7czoxMDoiU29maWUgV29nZSI7fQ"><img src="borsen.png" alt="børsen logo" class="borsen"></a>
+    </section>
+
+    <section>
+        <h2>SoMe</h2>
+        <p>Her skal være Tendo SoMe-links</p>
+    </section>
+
+    <section>
+        <h2>Pressemateriale</h2>
+        <p>Her skal være pressemateriale, som f.eks. logo</p>
+    </section>
+
+    <section>
+        <h2>Donationer</h2>
+        <p>Her skal være mulighed for at donere til Tendo</p>
+    </section>
 
 </main>
 
-      <div class="newss">
-            <a href="https://www.tv2fyn.dk/nyheder/15-12-2017/1930/robotudvikler-har-faet-millioner-til-robothandske?autoplay=1#player"><img src="tv2fyn.png" alt="tv2 fyn logo" class="tv2"></a>
-            <a href="https://ipaper.ipapercms.dk/DSB/udogse/2018/ud-se-september/?page=64/"><img src="udogse.jpg" alt="Ud og se logo" class="udogse"></a>
-            <br>
-            <a href="https://vimeo.com/252302663"><img src="moot.jpg" alt="moot logo" class="moot"></a>
-            <a href="http://borsen.dk/nyheder/avisen/artikel/11/167376/artikel.html?hl=YToxOntpOjA7czoxMDoiU29maWUgV29nZSI7fQ"><img src="borsen.png" alt="børsen logo" class="borsen"></a>
-     </div>
-
-
-
-
-
-<object data="footer.html" class="linked-object" id="linked-footer"></object>
-
-<!--
-
-<div class="footer">
-  <p>Tendo for people</p>
-</div>
-
--->
+<footer>
+    <?php include("footer.html"); ?>
+</footer>
 
 </body>
 
