@@ -8,6 +8,7 @@
         h1{
             font-size: 2.8em;
             color:RGB(238,126,50);
+            text-align: center;
         }
         h2{
             font-size:2em;
@@ -60,15 +61,6 @@
             border-color:#fff;
         }
 
-        #background{
-            background-image: url('img/about-del.png');
-            background-size: contain;
-            display: inline-block;
-            /*height:2000px;*/
-            width:100%;
-        }
-
-
         .header{
             float:left;
             width:100%;
@@ -111,13 +103,13 @@
         }
         section{
             width:80%;
-            margin:100px auto;
+            margin:60px auto;
             -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.12);
             -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.12);
             box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.12);
             clear:both;
             overflow: hidden;
-            padding:48px 3%;
+            padding:48px 3% 64px 3%;
         }
 
         section p{
@@ -126,7 +118,12 @@
             margin:auto;
         }
 
+        section h1{
+            margin-bottom:12px;
+        }
+
         section h2{
+            margin-bottom:12px;
             text-align: center;
         }
 
@@ -331,6 +328,9 @@
           min-height:100px;
           margin-bottom:50px;
         }
+        .footer-text h3{
+            padding-bottom:6px;
+        }
 
         .text-container {
           display:block;
@@ -411,10 +411,6 @@
     font-size: 24px;
     font-weight: bold;
     */
-  }
-  .index-big-header {
-    text-align:center;
-    margin-bottom:12px;
   }
 
   /* Interactive hand */
