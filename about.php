@@ -55,8 +55,8 @@
                 <p>Product design engineer from SDU with experience in user oriented design from e.g. LEGO.</p>
             </div>
         </div>
-        <div>
-            <p>The strong team behind Tendo works with great passion and has broad competence within the field. Even though Tendo is a newly established company, a wide network has already been established and the development is/has been supported by e.g. NASA (Houston), Ideon in Lund and Odense Robotics.<br/></p>
+        <div id="team-tendo-text">
+            <p>The strong team behind Tendo works with great passion and has broad competence within the field. Even though Tendo is a newly established company, a wide network has already been established and the development is/has been supported by e.g. NASA (Houston), Ideon in Lund and Odense Robotics.<br/><br/></p>
             <p>Tendo is a part of Odense Robotics and is thereby part of a cluster rewarded with the prestigious EU certificate Golden Label. The team has access to professional support within everything from development and prototyping to business management and matchmaking within the industry.</p>
         </div>
     </section>
@@ -73,11 +73,41 @@
 
     <section class="news">
         <h2>Omtale</h2>
-        <a href="https://www.tv2fyn.dk/nyheder/15-12-2017/1930/robotudvikler-har-faet-millioner-til-robothandske?autoplay=1#player"><img src="img/tv2fyn.png" alt="tv2 fyn logo" class="tv2"></a>
-        <a href="https://ipaper.ipapercms.dk/DSB/udogse/2018/ud-se-september/?page=64/"><img src="img/udogse.jpg" alt="Ud og se logo" class="udogse"></a>
+        <table>
+            <tr>
+                <td>
+                    <a href="https://www.tv2fyn.dk/nyheder/15-12-2017/1930/robotudvikler-har-faet-millioner-til-robothandske?autoplay=1#player" target="_blank">
+                        <img src="img/tv2fyn.png" alt="tv2 fyn logo" class="tv2"/>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://ipaper.ipapercms.dk/DSB/udogse/2018/ud-se-september/?page=64/" target="_blank">
+                        <img src="img/udogse.jpg" alt="Ud og se logo" class="udogse" />
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://vimeo.com/252302663" target="_blank">
+                        <img src="img/moot.jpg" alt="moot logo" class="moot">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="http://borsen.dk/nyheder/avisen/artikel/11/167376/artikel.html?hl=YToxOntpOjA7czoxMDoiU29maWUgV29nZSI7fQ" target="_blank">
+                        <img src="img/borsen.png" alt="børsen logo" class="borsen">
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+
         <br>
-        <a href="https://vimeo.com/252302663"><img src="img/moot.jpg" alt="moot logo" class="moot"></a>
-        <a href="http://borsen.dk/nyheder/avisen/artikel/11/167376/artikel.html?hl=YToxOntpOjA7czoxMDoiU29maWUgV29nZSI7fQ"><img src="img/borsen.png" alt="børsen logo" class="borsen"></a>
+
+
     </section>
 
     <section>

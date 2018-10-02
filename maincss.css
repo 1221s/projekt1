@@ -1,538 +1,584 @@
-        *{
-            margin:0px;
-            padding:0px;
-            border:0px solid red;
-            font-family: Lato;
-            font-weight: 300;
-        }
-        h1{
-            font-size: 2.8em;
-            color:RGB(238,126,50);
-            text-align: center;
-        }
-        h2{
-            font-size:2em;
-            font-weight:400;
-            color:RGB(238,126,50);
-        }
-        p{
-            font-size: 1.2em;
-        }
-        strong{
-            font-weight:400;
-        }
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px solid red;
+    font-family: Lato;
+    font-weight: 300;
+}
 
-        #hand-background {
-            background: url('img/tendo-soft-glove.jpg') no-repeat;
-            height:340px;
-            width:675px;
-            margin:64px auto;
-        }
-        #hand-index{
-            position:absolute;
-            border: 0px solid red;
-            height:30px;
-            width:110px;
-            margin-top:98px;
-            margin-left:6px;
-            display: block;
-        }
-        #hand-index-info{
-            position: absolute;
-            margin-top:30px;
-            margin-left:-30px;
-            height:30px;
-            width:110px;
-            border: 0px solid red;
-        }
-        .hand-info{
-            display: none;
-        }
-        .hand-link:hover + #hand-index-info{
-            /*display: block;*/
-        }
-        .hand-link{
-            width: 100%;
-            height:100%;
-            border:3px dotted blue;
-            display: block;
-        }
-        .hand-link:hover{
-            border-color:#fff;
-        }
+h1 {
+    font-size: 2.8em;
+    color: RGB(238, 126, 50);
+    text-align: center;
+}
 
-        .header{
-            float:left;
-            width:100%;
-        }
-        #logo{
-            margin-top:30px;
-            margin-left:30px;
-            float:left;
-        }
-        #logo img{
-            width:280px;
-        }
+h2 {
+    font-size: 2em;
+    font-weight: 400;
+    color: RGB(238, 126, 50);
+}
 
-        /* GLOBAL NAVIGATION
-        nav{
-            float:left;
-            margin-top:80px;
-            margin-left:150px;
-        }
-        nav li{
-            float:left;
-            list-style-type: none;
-            margin-right:64px;
-        }
-        nav a{
-            font-size:1.2em;
-            color:#000;
-        }
-        nav li:hover{
-            border-bottom:2px solid #000;
-        }
-        */
+p {
+    font-size: 1.2em;
+}
 
-        main{
-            width:100%;
-            float:left;
-        }
-        main:after{
+strong {
+    font-weight: 400;
+}
 
-        }
-        section{
-            width:80%;
-            margin:60px auto;
-            -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.12);
-            -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.12);
-            box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.12);
-            clear:both;
-            overflow: hidden;
-            padding:48px 3% 64px 3%;
-        }
 
-        section p{
-            line-height:1.4em;
-            max-width:600px;
-            margin:auto;
-        }
 
-        section h1{
-            margin-bottom:12px;
-        }
+.header {
+    float: left;
+    width: 100%;
+}
 
-        section h2{
-            margin-bottom:12px;
-            text-align: center;
-        }
+#logo {
+    margin-top: 30px;
+    margin-left: 30px;
+    float: left;
+}
 
-        /* Back to top-knap */
-        #myBtn {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            right: 30px;
-            z-index: 99;
-            font-size: 18px;
-            border: none;
-            outline: none;
-            background-color: #ee7e32;
-            color: black;
-            cursor: pointer;
-            padding: 15px;
-            border-radius: 4px;
-        }
+#logo img {
+    width: 280px;
+}
 
-        #myBtn:hover {
-            background-color: #f29c61;
-        }
+main {
+    width: 100%;
+    float: left;
+}
 
-        /* About: Team Tendo */
-        #team-tendo{
-            text-align: center;
-            margin-top:32px;
-        }
-        .employee{
-            width:21%;
-            float:left;
-            padding:0px 2%;
-        }
-        .employee p{
-            font-size:initial;
-            padding-top:8px;
-        }
-        .employee h3{
-            padding:6px 0px;
-            border-top:1px solid black;
-            border-bottom:1px solid black;
-        }
-        .employee strong{
-            font-size:inherit;
-            /*color:#ee7e32;*/
-        }
-        #employee-wrapper{
-            margin-top:64px;
-        }
-        .employee-photo{
-            height:150px;
-            width:150px;
-            margin:auto;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-            border-radius: 50%;
-            margin-bottom:16px;
-        }
-        .color-overlay{
-            display:block;
-            background-color:rgba(153,209,220,.3);
-            height:100%;
-            width:100%;
-            border-radius: 50%;
-        }
-        #sofie-foto{
-            background-image: url("img/sofie.png");
-        }
-        #robin-foto{
-            background-image: url("img/robin.png");
-        }
-        #pontus-foto{
-            background-image: url("img/pontus.png");
-        }
-        #joe-foto{
-            background-image: url("img/joe.png");
-        }
+main:after {
 
-        .column{
-            border:0px solid red;
-            float:left;
-            width:100%;
-            text-align:justify;
-            margin-top:64px!important;
-            padding:0 2%;
-        }
+}
 
-        .column p{
-            width: calc(100% / 2 - (1 * 40px));
-            float:left;
-            margin-right:40px;
+section {
+    width: 80%;
+    margin: 60px auto;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.12);
+    clear: both;
+    overflow: hidden;
+    padding: 48px 3% 64px 3%;
+}
 
-        }
-        .column p:last-child{
-            margin-right:0px;
-        }
+section p {
+    line-height: 1.4em;
+    max-width: 600px;
+    margin: auto;
+}
 
-        /*  header */
-                header{
-                            width:100%;
-                            float:left;
-                            height:150px;
-                            background-color:#99d1dc;
-                        }
-                #logo{
-                            max-height:150px;
-                            position:absolute;
-                            left:38%;
-                            top:-40px;
-                        }
+section h1 {
+    margin-bottom: 12px;
+}
 
-                #logo img{
-                            border-radius:50px;
-                        }
-                .nav{
-                            position:inherit;
-                            margin-top:100px;
-                            margin-left:30%;
-                            padding-left:50px;
-                            Background-color: #99d1dc;
-                        }
-                .nav li{
-                            float:left;
-                            list-style-type: none;
-                            margin-right:64px;
-                            padding:10px;
-                        }
-                .nav a{
-                            font-size:1.2em;
-                            color:#000;
-                            text-decoration: none;
-                            transition-duration:0.2s;
-                        }
+section h2 {
+    margin-bottom: 12px;
+    text-align: center;
+}
 
-                .nav a:hover{
-                            cursor:pointer;
-                            color:white;
-                            text-decoration:underline;
-                        }
+/* Back to top-knap */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #ee7e32;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
 
-                .dropdown-content {
-                  background-color:#99d1dc;
-                }
-                .dropdown {
-                    position: relative;
-                    display: inline-block;
-                }
+#myBtn:hover {
+    background-color: #f29c61;
+}
 
-                .dropdown-content {
-                    display: none;
-                    position: absolute;
-                    min-width: 200px;
-                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                    z-index: 1;
-                }
+/* About: Team Tendo */
+#team-tendo-text {
+    clear: both;
+}
 
-                .dropdown-content a {
-                    color: black;
-                    padding: 12px 16px;
-                    text-decoration: none;
-                    display: block;
-                }
+.employee {
+    width: 21%;
+    float: left;
+    padding: 0px 2%;
+}
 
-                .show {display:block;}
+.employee p {
+    font-size: initial;
+    padding-top: 8px;
+}
 
-                /*flags in header */
-                .language-container {
-                  float:left;
-                  display:inline-block;
-                  width:40px;
-                  height:300px;
-                  position:absolute;
-                  right:15px;
-                  top:15px;
-                }
+.employee h3 {
+    padding: 6px 0px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
 
-                .languageimg {
-                  width:20px;
-                  height:15px;
-                  padding:5px;
-                }
+.employee strong {
+    font-size: inherit;
+    /*color:#ee7e32;*/
+}
 
-  /* footer css */
+#employee-wrapper {
+    margin: 64px auto;
+    overflow: hidden;
+}
 
-        .footer {
-          position:relative;
-          left:0;
-          bottom:0;
-          width:100%;
-          background-color:#99d1dc;
-          color:black;
-          font-family: Lato;
-          float:left;
-          max-height:500px;
-        }
+.employee-photo {
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
 
-        .footer-text {
-          float:left;
-          min-width:200px;
-          min-height:100px;
-          margin-bottom:50px;
-        }
-        .footer-text h3{
-            padding-bottom:6px;
-        }
+.color-overlay {
+    display: block;
+    background-color: rgba(153, 209, 220, .3);
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
 
-        .text-container {
-          display:block;
-          position:relative;
-          width:80%;
-          left:20%;
-          padding-top:50px;
-        }
-        .paragraphfooter {
-          padding-bottom:10px;
-        }
+#sofie-foto {
+    background-image: url("img/sofie.png");
+}
 
-        #footer-logo {
-          width:300px;
-          display:inline-block;
+#robin-foto {
+    background-image: url("img/robin.png");
+}
 
-        }
-        .some {
-          position:relative;
-          display:block;
-          width:50px;
-          padding:5px;
-          float:right;
-          overflow:hidden;
-          right:20%;
-        }
-        .some-text {
-          position:relative;
-          width:100px;
-          padding:5px;
-          float:right;
-          right:20%;
-          font-size:25px;
-          padding-top:10px;
-        }
+#pontus-foto {
+    background-image: url("img/pontus.png");
+}
 
-        .footer p{
-            font-size:1em;
-        }
-        .footer h2{
-            color:initial;
-        }
+#joe-foto {
+    background-image: url("img/joe.png");
+}
 
-    /* main index */
+.column {
+    border: 0px solid red;
+    float: left;
+    width: 100%;
+    text-align: justify;
+    margin-top: 64px !important;
+    padding: 0 2%;
+}
 
-    section p{
-        max-width:600px;
-        margin:auto;
-    }
+.column p {
+    width: calc(100% / 2 - (1 * 40px));
+    float: left;
+    margin-right: 40px;
 
-    /* interactive hand */
-    #hand-background {
-      background: url('img/tendo-soft-glove.jpg') no-repeat;
-      height:340px;
-      width:675px;
-      margin:64px auto;
-  }
-  #hand-index{
-      position:absolute;
-      height:30px;
-      width:110px;
-      margin-top:98px;
-      margin-left:6px;
-      display: block;
-  }
-  #hand-index-info{
-      position: absolute;
-      margin-top:30px;
-      margin-left:-30px;
-      height:35px;
-      width:85px;
-  }
-  .overskrift{
+}
+
+.column p:last-child {
+    margin-right: 0px;
+}
+
+/*  header */
+header {
+    width: 100%;
+    float: left;
+    height: 150px;
+    background-color: #99d1dc;
+}
+
+#logo {
+    max-height: 150px;
+    position: absolute;
+    left: 38%;
+    top: -40px;
+}
+
+#logo img {
+    border-radius: 50px;
+}
+
+.nav {
+    position: inherit;
+    margin-top: 100px;
+    margin-left: 30%;
+    padding-left: 50px;
+    Background-color: #99d1dc;
+}
+
+.nav li {
+    float: left;
+    list-style-type: none;
+    margin-right: 64px;
+    padding: 10px;
+}
+
+.nav a {
+    font-size: 1.2em;
+    color: #000;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.nav a:hover {
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+}
+
+.dropdown-content {
+    background-color: #99d1dc;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+/*flags in header */
+.language-container {
+    float: left;
+    display: inline-block;
+    width: 40px;
+    height: 300px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.languageimg {
+    width: 20px;
+    height: 15px;
+    padding: 5px;
+}
+
+/* footer css */
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #99d1dc;
+    color: black;
+    font-family: Lato;
+    float: left;
+    max-height: 500px;
+}
+
+.footer-text {
+    float: left;
+    min-width: 200px;
+    min-height: 100px;
+    margin-bottom: 50px;
+}
+
+.footer-text h3 {
+    padding-bottom: 6px;
+}
+
+.text-container {
+    display: block;
+    position: relative;
+    width: 80%;
+    left: 20%;
+    padding-top: 50px;
+}
+
+.paragraphfooter {
+    padding-bottom: 10px;
+}
+
+#footer-logo {
+    width: 300px;
+    display: inline-block;
+
+}
+
+.some {
+    position: relative;
+    display: block;
+    width: 50px;
+    padding: 5px;
+    float: right;
+    overflow: hidden;
+    right: 20%;
+}
+
+.some-text {
+    position: relative;
+    width: 100px;
+    padding: 5px;
+    float: right;
+    right: 20%;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.footer p {
+    font-size: 1em;
+}
+
+.footer h2 {
+    color: initial;
+}
+
+/* interactive hand */
+
+#hand-index {
+    position: absolute;
+    border: 0px solid red;
+    height: 30px;
+    width: 110px;
+    margin-top: 98px;
+    margin-left: 6px;
+    display: block;
+}
+
+#hand-index-info {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -30px;
+    height: 30px;
+    width: 110px;
+    border: 0px solid red;
+}
+
+.hand-info {
+    display: none;
+}
+
+.hand-link:hover + #hand-index-info {
+    /*display: block;*/
+}
+
+.hand-link {
+    width: 100%;
+    height: 100%;
+    border: 3px dotted blue;
+    display: block;
+}
+
+.hand-link:hover {
+    border-color: #fff;
+}
+
+#hand-background {
+    background: url('img/tendo-soft-glove.jpg') no-repeat;
+    height: 340px;
+    width: 675px;
+    margin: 64px auto;
+}
+
+#hand-index {
+    position: absolute;
+    height: 30px;
+    width: 110px;
+    margin-top: 98px;
+    margin-left: 6px;
+    display: block;
+}
+
+#hand-index-info {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -30px;
+    height: 35px;
+    width: 85px;
+}
+
+.overskrift {
     position: relative;
     text-align: center;
     background-color: inherit;
-      /*
-    font-size: 24px;
-    font-weight: bold;
-    */
-  }
+    /*
+  font-size: 24px;
+  font-weight: bold;
+  */
+}
 
-  /* Interactive hand */
+/* Old interactive hand
 
-  .hand-info{
-      display: none;
-  }
-  .hand-link:hover + #hand-index-info{
-      /*display: block;*/
-  }
-  .hand-link{
-      width: 100%;
-      height:100%;
-      border:3px dotted #48b3aa;
-      border-radius: 15px;
-      display: block;
-      cursor:pointer;
-  }
-  .hand-link:hover{
-      border-color:#ee7e32;
-  }
-  #interactive-1{
+.hand-info{
+    display: none;
+}
+.hand-link:hover + #hand-index-info{
+    display: block;
+}
+*/
+
+.hand-link {
+    width: 100%;
+    height: 100%;
+    border: 3px dotted #48b3aa;
+    border-radius: 15px;
+    display: block;
+    cursor: pointer;
+}
+
+.hand-link:hover {
+    border-color: #ee7e32;
+}
+
+#interactive-1 {
     width: 65px;
     left: 18px;
     position: absolute;
-  }
-  #interactive-2{
+}
+
+#interactive-2 {
     position: absolute;
     top: 50px;
     left: 150px;
     width: 78px;
     height: 40px;
-  }
-  #interactive-3{
+}
+
+#interactive-3 {
     position: absolute;
     top: 106px;
     left: 247px;
     width: 89px;
     height: 50px;
-  }
-  #interactive-4{
+}
+
+#interactive-4 {
     position: absolute;
     left: 444px;
     top: -12px;
     height: 71px;
     width: 116px;
-  }
-  #interactive-5{
+}
+
+#interactive-5 {
     position: absolute;
     left: 582px;
     width: 46px;
     height: 35px;
     top: -24px;
-  }
-  #text-1{
+}
+
+#text-1 {
     position: absolute;
     top: -43px;
-  }
-  #text-2{
+}
+
+#text-2 {
     position: absolute;
     left: 133px;
     top: -25px;
     width: 50px;
-  }
-  #text-3{
+}
+
+#text-3 {
     position: absolute;
     left: 276px;
     top: 163px;
-  }
-  #text-4{
+}
+
+#text-4 {
     position: absolute;
     left: 425px;
     top: -52px;
-  }
-  #text-5{
+}
+
+#text-5 {
     position: absolute;
     left: 572px;
     top: -63px;
     width: 60px;
-  }
-  #text-6{
+}
+
+#text-6 {
     position: absolute;
     top: -92px;
     left: 240px;
     width: 92px;
-  }
-  .info-text{
-    visibility: hidden;
-    font-weight:bold;
-  }
-
-  /* index-icons in main part of page CSS */
-
- .icon-list {
-   display:inline-block;
-   width:100%;
-   margin-top:30px;
- }
-  .icon-list li {
-    list-style:none;
-  }
-.icon-list-item {
-  max-width:25%;
-  margin:auto;
-  float:left;
-  padding-left:5%;
 }
 
-  .icon-list-item p {
-      width:100%;
-    margin:auto;
-      text-align: center;
-  }
+.info-text {
+    visibility: hidden;
+    font-weight: bold;
+}
 
-    .index-icon {
-      max-width:100%;
-      padding:10px 0px;
-    }
+/* index-icons in main part of page CSS */
 
-    /* Teknisk om handsken */
-#ok-glove img{
-    width:auto;
-    height:300px;
-    margin:auto;
+.icon-list {
+    display: inline-block;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.icon-list li {
+    list-style: none;
+}
+
+.icon-list-item {
+    max-width: 25%;
+    margin: auto;
+    float: left;
+    padding-left: 5%;
+}
+
+.icon-list-item p {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.index-icon {
+    max-width: 100%;
+    padding: 10px 0px;
+}
+
+/* Teknisk om handsken */
+#ok-glove img {
+    width: auto;
+    height: 300px;
+    margin: auto;
+}
+
+/* NEWS */
+.news img {
+    max-width: 400px;
+}
+
+.news table {
+    max-width: 600px;
+    margin: 48px auto 0 auto;
+}
+
+.news table td {
+    padding: 24px 0;
+}
+
+.news table td:hover {
+    background-color: rgba(238, 126, 50, .5);
 }

@@ -21,7 +21,7 @@
 <main>
     <section>
         <div style="max-width:200px; margin:auto;">
-        <h2>Kontakt information</h2>
+        <h2>Contact info</h2>
         <br/>
         <h3>Email</h3>
         <p><a href="mailto:info@tendoforpeople.se">info@tendoforpeople.se</a></p><br/>
