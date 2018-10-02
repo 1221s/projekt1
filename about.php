@@ -110,19 +110,23 @@
 
     </section>
 
-    <section>
+    <section id="pressemateriale">
         <h2>Pressemateriale</h2>
-        <p>Herunder kan der hentes logo</p>
-        <a href="#" >Hvid med blå baggrund</a>
-        <a href="#" >Hvid uden baggrund</a>
-        <a href="#" >Sort med hvid baggrund</a>
-        <a href="#" >Sort uden baggrund</a>
+        <p><strong>Herunder kan der hentes logo:</strong></p>
+        <ul>
+            <li><a href="img/logo_blue.png" target="_blank"><p>Hvid med blå baggrund</p></a></li>
+            <li><a href="img/logo_white.png" target="_blank"><p>Blå med hvid baggrund</p></a></li>
+            <li><a href="img/logo_white_trans.png" target="_blank"><p>Hvid uden baggrund</p></a></li>
+            <li><a href="img/logo_black_trans.png" target="_blank"><p>Sort uden baggrund</p></a></li>
+        </ul>
+
     </section>
 
-    <section>
+    <section id="donations">
         <h2>Giv en hånd</h2>
-        <p></p>
-        <img width="300px" src="img/swish-logo.png">
+        <div>
+            <img src="img/swish-logo.png">
+        </div>
         <p>Swish nr: 1233 991 478</p>
     </section>
 

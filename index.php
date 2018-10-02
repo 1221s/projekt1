@@ -38,21 +38,20 @@
           Tendo dækker kun din tommelfinger og pegefinger, samt lidt af underarmen, hvor batteriet er placeret. Handsken er let, og kan være under ærmet.
         </p>
 
-        <ul class="icon-list">
-          <li class="icon-list-item">
-          <img src="img/ok-ikon.png" alt="index icon" class="index-icon">
-          <p> Styrker grebet for mennesker med nedsat gribeevne.</p>
-        </li>
-        <li class="icon-list-item">
-        <img src="img/drop-ikon.png" alt="index icon" class="index-icon">
-        <p> Den nederste del tåler vand og kan vaskes.</p>
-      </li>
-      <li class="icon-list-item">
-      <img src="img/hjerte-ikon.png" alt="index icon" class="index-icon">
-      <p> Handsken er specielt fremstillet til dig</p>
-    </li>
-
-        </ul>
+        <div class="icon-list">
+            <div class="icon-list-item">
+                <img src="img/ok-ikon.png" alt="index icon" class="index-icon">
+                <p> Styrker grebet for mennesker med nedsat gribeevne.</p>
+            </div>
+            <div class="icon-list-item">
+                <img src="img/drop-ikon.png" alt="index icon" class="index-icon">
+                <p> Den nederste del tåler vand og kan vaskes.</p>
+            </div>
+            <div class="icon-list-item">
+                <img src="img/hjerte-ikon.png" alt="index icon" class="index-icon">
+                <p> Handsken er specielt fremstillet til dig</p>
+            </div>
+        </div>
     </section>
 
     <section>

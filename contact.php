@@ -21,14 +21,14 @@
 <main>
     <section>
         <div style="max-width:200px; margin:auto;">
-        <h2>Contact info</h2>
+        <h2>Kontaktinfo</h2>
         <br/>
-        <h3>Email</h3>
+            <h3><strong>Email:</strong></h3>
         <p><a href="mailto:info@tendoforpeople.se">info@tendoforpeople.se</a></p><br/>
-        <h3>Phone</h3>
+            <h3><strong>Telefon:</strong></h3>
         <p>(+46) 073-3310 414</p>
         <br>
-        <h3>Adresse</h3>
+            <h3><strong>Adresse:</strong></h3>
         <p>Stjerneskibet</p>
         <p>Havnegade 29</p>
         <p>5000 Odense</p>

@@ -24,13 +24,12 @@
 </header>
 
 <main>
-    <section>
+    <section id="product-glove-section">
         <h2>Teknisk om handsken</h2>
-        <p>Vægt : 127gram<br/>
-            Lavet af blødt plastik <br/>
-            Nem at oplade<br/>
-            intelligente sensorer
-        </p>
+        <p>Vægt: 127gram</p>
+        <p>Lavet af blødt plastik</p>
+        <p>Nem at oplade</p>
+        <p>intelligente sensorer</p>
         <div id="ok-glove">
             <img src="img/ok-glove.jpg"/>
         </div>

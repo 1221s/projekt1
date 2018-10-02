@@ -26,23 +26,6 @@ strong {
     font-weight: 400;
 }
 
-
-
-.header {
-    float: left;
-    width: 100%;
-}
-
-#logo {
-    margin-top: 30px;
-    margin-left: 30px;
-    float: left;
-}
-
-#logo img {
-    width: 280px;
-}
-
 main {
     width: 100%;
     float: left;
@@ -70,12 +53,27 @@ section p {
 }
 
 section h1 {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 section h2 {
     margin-bottom: 12px;
     text-align: center;
+}
+
+.header {
+    float: left;
+    width: 100%;
+}
+
+#logo {
+    margin:auto;
+    width:280px;
+    clear: both;
+}
+
+#logo img {
+    width: 280px;
 }
 
 /* Back to top-knap */
@@ -195,30 +193,21 @@ header {
     background-color: #99d1dc;
 }
 
-#logo {
-    max-height: 150px;
-    position: absolute;
-    left: 38%;
-    top: -40px;
-}
-
-#logo img {
-    border-radius: 50px;
+nav{
+    max-width:510px;
+    margin:auto;
 }
 
 .nav {
-    position: inherit;
-    margin-top: 100px;
-    margin-left: 30%;
-    padding-left: 50px;
+    margin-top:-19px;
     Background-color: #99d1dc;
 }
 
 .nav li {
     float: left;
     list-style-type: none;
-    margin-right: 64px;
-    padding: 10px;
+    margin: 0 32px;
+    padding: 10px 0;
 }
 
 .nav a {
@@ -248,7 +237,7 @@ header {
     position: absolute;
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 999;
 }
 
 .dropdown-content a {
@@ -394,7 +383,7 @@ header {
     background: url('img/tendo-soft-glove.jpg') no-repeat;
     height: 340px;
     width: 675px;
-    margin: 64px auto;
+    margin: 0 auto;
 }
 
 #hand-index {
@@ -531,43 +520,54 @@ header {
 /* index-icons in main part of page CSS */
 
 .icon-list {
-    display: inline-block;
     width: 100%;
-    margin-top: 30px;
+    max-width: 800px;
+    margin:42px auto 0 auto;
 }
 
-.icon-list li {
-    list-style: none;
-}
 
 .icon-list-item {
-    max-width: 25%;
-    margin: auto;
+    width: 20%;
     float: left;
-    padding-left: 5%;
+    padding-right: 6.667%;
+    padding-left: 6.667%;
 }
 
 .icon-list-item p {
-    width: 100%;
-    margin: auto;
     text-align: center;
 }
 
-.index-icon {
-    max-width: 100%;
-    padding: 10px 0px;
+img.index-icon {
+    width: 100%;
 }
 
 /* Teknisk om handsken */
+#product-glove-section p{
+    text-align: center;
+    width:20%;
+    float:left;
+    padding: 2% 2%;
+    margin:20px auto;
+    border-left:2px solid #99d1dc;
+}
+
+#product-glove-section p:last-of-type {
+    border-right:2px solid #99d1dc;
+}
+
+#ok-glove{
+    width:300px;
+    margin:auto;
+}
+
 #ok-glove img {
-    width: auto;
-    height: 300px;
-    margin: auto;
+    width: 300px;
 }
 
 /* NEWS */
 .news img {
-    max-width: 400px;
+    max-width: 300px;
+    z-index: -1;
 }
 
 .news table {
@@ -580,5 +580,26 @@ header {
 }
 
 .news table td:hover {
-    background-color: rgba(238, 126, 50, .5);
+
+}
+
+/* PRESSEMATERIALE */
+
+#pressemateriale ul{
+    max-width:600px;
+    margin: 4px auto 0 auto;
+    overflow: auto;
+}
+#pressemateriale li{
+    float:left;
+    clear:both;
+}
+
+/* Donations */
+#donations div, #donations img{
+    width:300px;
+    margin:12px auto;
+}
+#donations p{
+    text-align:center;
 }
