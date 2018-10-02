@@ -334,12 +334,12 @@ header {
 
 .some-text {
     position: relative;
-    width: 100px;
+    width: 70px;
     padding: 5px;
     float: right;
     right: 20%;
     font-size: 25px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .footer p {
