@@ -6,41 +6,19 @@
   <meta name="keywords" content="Tendo, Tendoforpeople, exosceleton, soft glove">
   <meta name="author" content="Tendoforpeople">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tendo</title>
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
- <link href="maincss.css" rel="stylesheet" type="text/css">
-
-    <script defer>
-        /* When the user hovers over the button,
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        // Close the dropdown menu if the user clicks outside of it
-        window.onMouseOver = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-
-    </script>
-
+    <title>Tendo | Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="maincss.css" rel="stylesheet" type="text/css">
+    <script src="js/dropdownmenu.js" defer></script>
+    <script src="js/backtotop.js" defer></script>
 </head>
   
 <body>
   <header>
-      <?php include("header.html"); ?>
+      <?php include("include/header.html"); ?>
   </header>
 
-<main id="index-main">
+<main>
 
     <!-- slider section eventuelt
     <section id="home-section" class="slider">
@@ -54,7 +32,7 @@
     </section>-->
     <!-- slider section eventuelt -->
 
-    <section class="index-maintext">
+    <section>
       <h1 class="index-big-header">Gør det du altid har gjort</h1>
         <p>Tendo er et blødt robot exoskelet – en handske, som styrker dit greb.
           Tendo dækker kun din tommelfinger og pegefinger, samt lidt af underarmen, hvor batteriet er placeret. Handsken er let, og kan være under ærmet.
@@ -77,7 +55,7 @@
         </ul>
     </section>
 
-    <section class="index-maintext">
+    <section>
 
    <div class="overskrift">
      <h2>Udforsk Tendo handsken</h2>
@@ -172,12 +150,12 @@
     </div>
     </section>
 
-    <section class="index-maintext">
+    <section>
         <h2>Mission</h2>
         <p>Her skal der stå noget om, hvad Tendos mission er</p>
     </section>
 
-    <section class="index-maintext">
+    <section>
         <h2>Testimonials</h2>
         <p>Her skal der stå, hvad folk siger om Tendo</p>
     </section>
@@ -186,8 +164,10 @@
 </main>
 
   <footer>
-      <?php include("footer.html"); ?>
+      <?php include("include/footer.html"); ?>
   </footer>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 </body>
 
