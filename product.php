@@ -9,10 +9,8 @@
 <title>Tendo | Products</title>
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <link href="maincss.css" rel="stylesheet" type="text/css">
-<style>
-</style>
-
-
+    <script src="js/dropdownmenu.js" defer></script>
+    <script src="js/backtotop.js" defer></script>
 </head>
 
 
@@ -20,7 +18,10 @@
 
 
 <body>
-<header>Placeholder for header</header>
+
+<header>
+    <?php include("include/header.html"); ?>
+</header>
 
 <main>
     <section>
@@ -29,7 +30,11 @@
     </section>
 </main>
 
-<footer>Placeholder for footer</footer>
+<footer>
+    <?php include("include/footer.html"); ?>
+</footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 </body>
   

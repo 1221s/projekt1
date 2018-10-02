@@ -9,27 +9,18 @@
 <title>Tendo | Contact</title>
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <link href="maincss.css" rel="stylesheet" type="text/css">
-<style>
-</style>
-
-
+    <script src="js/dropdownmenu.js" defer></script>
+    <script src="js/backtotop.js" defer></script>
 </head>
 <body>
 
   <header>
-      <div id="logo"><img src="img/logo_blue.png"/></div>
-      <nav>
-          <ul>
-              <a href="#"><li>Home</li></a>
-              <a href="#"><li>Products</li></a>
-              <a href="#"><li>Tendo</li></a>
-              <a href="#"><li>Contact</li></a>
-          </ul>
-      </nav>
+      <?php include("include/header.html"); ?>
   </header>
 
 <main>
     <section>
+        <div style="max-width:200px; margin:auto;">
         <h2>Contact info</h2>
         <br/>
         <h3>Email</h3>
@@ -42,16 +33,16 @@
         <p>Havnegade 29</p>
         <p>5000 Odense</p>
         <p>Denmark</p>
+        </div>
     </section>
 </main>
 
 
 <footer>
-    Placeholder for footer
-    <div class="footer">
-        <p>Tendo for people</p>
-    </div>
+    <?php include("include/footer.html"); ?>
 </footer>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 </body>
 

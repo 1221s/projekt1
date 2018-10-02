@@ -1,327 +1,531 @@
-/* Global CSS */
+        *{
+            margin:0px;
+            padding:0px;
+            border:0px solid red;
+            font-family: Lato;
+            font-weight: 300;
+        }
+        h1{
+            font-size: 2.8em;
+            color:RGB(238,126,50);
+            text-align: center;
+        }
+        h2{
+            font-size:2em;
+            font-weight:400;
+            color:RGB(238,126,50);
+        }
+        p{
+            font-size: 1.2em;
+        }
+        strong{
+            font-weight:400;
+        }
 
-* {
-    margin: 0px;
-    padding: 0px;
-    border: 0px solid red;
-    font-family: Lato;
-    font-weight: 300;
-}
+        #hand-background {
+            background: url('img/tendo-soft-glove.jpg') no-repeat;
+            height:340px;
+            width:675px;
+            margin:64px auto;
+        }
+        #hand-index{
+            position:absolute;
+            border: 0px solid red;
+            height:30px;
+            width:110px;
+            margin-top:98px;
+            margin-left:6px;
+            display: block;
+        }
+        #hand-index-info{
+            position: absolute;
+            margin-top:30px;
+            margin-left:-30px;
+            height:30px;
+            width:110px;
+            border: 0px solid red;
+        }
+        .hand-info{
+            display: none;
+        }
+        .hand-link:hover + #hand-index-info{
+            /*display: block;*/
+        }
+        .hand-link{
+            width: 100%;
+            height:100%;
+            border:3px dotted blue;
+            display: block;
+        }
+        .hand-link:hover{
+            border-color:#fff;
+        }
 
-h1 {
-    font-size: 2.6em;
-}
+        .header{
+            float:left;
+            width:100%;
+        }
+        #logo{
+            margin-top:30px;
+            margin-left:30px;
+            float:left;
+        }
+        #logo img{
+            width:280px;
+        }
 
-h2 {
-    font-size: 2em;
-}
-h3{
-    font-weight:400;
-}
+        /* GLOBAL NAVIGATION
+        nav{
+            float:left;
+            margin-top:80px;
+            margin-left:150px;
+        }
+        nav li{
+            float:left;
+            list-style-type: none;
+            margin-right:64px;
+        }
+        nav a{
+            font-size:1.2em;
+            color:#000;
+        }
+        nav li:hover{
+            border-bottom:2px solid #000;
+        }
+        */
 
-p {
+        main{
+            width:100%;
+            float:left;
+        }
+        main:after{
 
-}
+        }
+        section{
+            width:80%;
+            margin:60px auto;
+            -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.12);
+            -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.12);
+            box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.12);
+            clear:both;
+            overflow: hidden;
+            padding:48px 3% 64px 3%;
+        }
 
-strong {
-    font-weight: 400;
-}
+        section p{
+            line-height:1.4em;
+            max-width:600px;
+            margin:auto;
+        }
 
-nav {
-    float: left;
-    margin-top: 80px;
-    margin-left: 150px;
-}
+        section h1{
+            margin-bottom:12px;
+        }
 
-nav li {
-    float: left;
-    list-style-type: none;
-    margin-right: 64px;
-}
+        section h2{
+            margin-bottom:12px;
+            text-align: center;
+        }
 
-nav a {
-    font-size: 1.2em;
-    color: #000;
-}
+        /* Back to top-knap */
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #ee7e32;
+            color: black;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
 
-nav li:hover {
-    border-bottom: 2px solid #000;
-}
+        #myBtn:hover {
+            background-color: #f29c61;
+        }
 
-main {
-    width: 100%;
-    float: left;
-    margin-bottom:150px;
-}
+        /* About: Team Tendo */
+        #team-tendo{
+            text-align: center;
+            margin-top:32px;
+        }
+        .employee{
+            width:21%;
+            float:left;
+            padding:0px 2%;
+        }
+        .employee p{
+            font-size:initial;
+            padding-top:8px;
+        }
+        .employee h3{
+            padding:6px 0px;
+            border-top:1px solid black;
+            border-bottom:1px solid black;
+        }
+        .employee strong{
+            font-size:inherit;
+            /*color:#ee7e32;*/
+        }
+        #employee-wrapper{
+            margin-top:64px;
+        }
+        .employee-photo{
+            height:150px;
+            width:150px;
+            margin:auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            border-radius: 50%;
+            margin-bottom:16px;
+        }
+        .color-overlay{
+            display:block;
+            background-color:rgba(153,209,220,.3);
+            height:100%;
+            width:100%;
+            border-radius: 50%;
+        }
+        #sofie-foto{
+            background-image: url("img/sofie.png");
+        }
+        #robin-foto{
+            background-image: url("img/robin.png");
+        }
+        #pontus-foto{
+            background-image: url("img/pontus.png");
+        }
+        #joe-foto{
+            background-image: url("img/joe.png");
+        }
 
-section {
-    width: 70%;
-    margin: auto;
-    overflow: hidden;
-}
+        .column{
+            border:0px solid red;
+            float:left;
+            width:100%;
+            text-align:justify;
+            margin-top:64px!important;
+            padding:0 2%;
+        }
 
-header {
-    float: left;
-    width: 100%;
-    height: 156px;
-    border:1px solid black;
-}
+        .column p{
+            width: calc(100% / 2 - (1 * 40px));
+            float:left;
+            margin-right:40px;
 
-footer{
-    width:100%;
-    height:285px;
-    border:1px solid black;
-    clear:both;
-}
+        }
+        .column p:last-child{
+            margin-right:0px;
+        }
 
-/* Sections med indhold */
+        /*  header */
+                header{
+                            width:100%;
+                            float:left;
+                            height:150px;
+                            background-color:#99d1dc;
+                        }
+                #logo{
+                            max-height:150px;
+                            position:absolute;
+                            left:38%;
+                            top:-40px;
+                        }
 
-main section {
-    margin-top: 150px;
-}
+                #logo img{
+                            border-radius:50px;
+                        }
+                .nav{
+                            position:inherit;
+                            margin-top:100px;
+                            margin-left:30%;
+                            padding-left:50px;
+                            Background-color: #99d1dc;
+                        }
+                .nav li{
+                            float:left;
+                            list-style-type: none;
+                            margin-right:64px;
+                            padding:10px;
+                        }
+                .nav a{
+                            font-size:1.2em;
+                            color:#000;
+                            text-decoration: none;
+                            transition-duration:0.2s;
+                        }
 
+                .nav a:hover{
+                            cursor:pointer;
+                            color:white;
+                            text-decoration:underline;
+                        }
 
-/* Interaktiv hånd */
+                .dropdown-content {
+                  background-color:#99d1dc;
+                }
+                .dropdown {
+                    position: relative;
+                    display: inline-block;
+                }
 
-#hand-background {
-    background: url('img/tendo-soft-glove.jpg') no-repeat;
-    height: 340px;
-    width: 675px;
-    margin: 64px auto;
-}
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    min-width: 200px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                }
 
-#hand-index {
-    position: absolute;
-    border: 0px solid red;
-    height: 30px;
-    width: 110px;
-    margin-top: 98px;
-    margin-left: 6px;
-    display: block;
-}
+                .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                }
 
-#hand-index-info {
-    position: absolute;
-    margin-top: 30px;
-    margin-left: -30px;
-    height: 30px;
-    width: 110px;
-    border: 0px solid red;
-}
+                .show {display:block;}
 
-.hand-info {
-    display: none;
-}
+                /*flags in header */
+                .language-container {
+                  float:left;
+                  display:inline-block;
+                  width:40px;
+                  height:300px;
+                  position:absolute;
+                  right:15px;
+                  top:15px;
+                }
 
-.hand-link:hover + #hand-index-info {
-    /*display: block;*/
-}
+                .languageimg {
+                  width:20px;
+                  height:15px;
+                  padding:5px;
+                }
 
-.hand-link {
-    width: 100%;
-    height: 100%;
-    border: 3px dotted blue;
-    display: block;
-}
+  /* footer css */
 
-.hand-link:hover {
-    border-color: #fff;
-}
+        .footer {
+          position:relative;
+          left:0;
+          bottom:0;
+          width:100%;
+          background-color:#99d1dc;
+          color:black;
+          font-family: Lato;
+          float:left;
+          max-height:500px;
+        }
 
-/* Logo */
+        .footer-text {
+          float:left;
+          min-width:200px;
+          min-height:100px;
+          margin-bottom:50px;
+        }
+        .footer-text h3{
+            padding-bottom:6px;
+        }
 
-#logo {
-    margin-top: 30px;
-    margin-left: 30px;
-    float: left;
-}
+        .text-container {
+          display:block;
+          position:relative;
+          width:80%;
+          left:20%;
+          padding-top:50px;
+        }
+        .paragraphfooter {
+          padding-bottom:10px;
+        }
 
-#logo img {
-    width: 280px;
-}
+        #footer-logo {
+          width:300px;
+          display:inline-block;
 
-/* About side Team Tendo */
+        }
+        .some {
+          position:relative;
+          display:block;
+          width:50px;
+          padding:5px;
+          float:right;
+          overflow:hidden;
+          right:20%;
+        }
+        .some-text {
+          position:relative;
+          width:100px;
+          padding:5px;
+          float:right;
+          right:20%;
+          font-size:25px;
+          padding-top:10px;
+        }
 
-#team-tendo {
+        .footer p{
+            font-size:1em;
+        }
+        .footer h2{
+            color:initial;
+        }
+
+    /* main index */
+
+    section p{
+        max-width:600px;
+        margin:auto;
+    }
+
+    /* interactive hand */
+    #hand-background {
+      background: url('img/tendo-soft-glove.jpg') no-repeat;
+      height:340px;
+      width:675px;
+      margin:64px auto;
+  }
+  #hand-index{
+      position:absolute;
+      height:30px;
+      width:110px;
+      margin-top:98px;
+      margin-left:6px;
+      display: block;
+  }
+  #hand-index-info{
+      position: absolute;
+      margin-top:30px;
+      margin-left:-30px;
+      height:35px;
+      width:85px;
+  }
+  .overskrift{
+    position: relative;
     text-align: center;
-}
+    background-color: inherit;
+      /*
+    font-size: 24px;
+    font-weight: bold;
+    */
+  }
 
-.employee {
-    width: 21%;
-    float: left;
-    padding: 0px 2%;
-}
+  /* Interactive hand */
 
-.employee h2 {
-    margin-bottom: 8px;
-}
-
-.employee strong {
-    font-size: inherit;
-    /*color:#ee7e32;*/
-}
-
-#employee-wrapper {
-    margin-top: 64px;
-}
-
-.employee-photo {
-    height: 150px;
-    width: 150px;
-    margin: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    border-radius: 50%;
-    margin-bottom: 16px;
-}
-
-.color-overlay {
-    display: block;
-    background-color: rgba(153, 209, 220, .3);
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-}
-
-#sofie-foto {
-    background-image: url("img/sofie.png");
-}
-
-#robin-foto {
-    background-image: url("img/robin.png");
-}
-
-#pontus-foto {
-    background-image: url("img/pontus.png");
-}
-
-#joe-foto {
-    background-image: url("img/joe.png");
-}
-
-.team-text {
-    /*
-    float:left;
-    text-align: left;
-    margin-top:64px;
-*/
-}
-
-.column {
-    border: 0px solid red;
-    float: left;
-    width: 100%;
-    text-align: justify;
-    margin-top: 64px !important;
-    padding: 0 2%;
-}
-
-.column p {
-    width: calc(100% / 2 - (1 * 40px));
-    float: left;
-    margin-right: 40px;
-
-}
-
-.column p:last-child {
-    margin-right: 0px;
-}
-
-/* Footer CSS */
-
-.footer {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #99d1dc;
-    color: black;
-    font-family: Lato;
-    float: left;
-    max-height: 500px;
-}
-
-.footer-text {
-    float: left;
-    min-width: 200px;
-    min-height: 100px;
-    margin-bottom: 50px;
-}
-
-.text-container {
-    display: block;
-    position: relative;
-    width: 80%;
-    left: 20%;
-}
-
-.paragraphfooter {
-    padding-bottom: 10px;
-}
-
-.wasteofspace {
-    width: 100%;
-    height: 1500px;
-    background-color: grey;
-}
-
-#footer-logo {
-    width: 300px;
-    display: inline-block;
-
-}
-
-.some {
-    position: relative;
-    display: block;
+  .hand-info{
+      display: none;
+  }
+  .hand-link:hover + #hand-index-info{
+      /*display: block;*/
+  }
+  .hand-link{
+      width: 100%;
+      height:100%;
+      border:3px dotted #48b3aa;
+      border-radius: 15px;
+      display: block;
+      cursor:pointer;
+  }
+  .hand-link:hover{
+      border-color:#ee7e32;
+  }
+  #interactive-1{
+    width: 65px;
+    left: 18px;
+    position: absolute;
+  }
+  #interactive-2{
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    width: 78px;
+    height: 40px;
+  }
+  #interactive-3{
+    position: absolute;
+    top: 106px;
+    left: 247px;
+    width: 89px;
+    height: 50px;
+  }
+  #interactive-4{
+    position: absolute;
+    left: 444px;
+    top: -12px;
+    height: 71px;
+    width: 116px;
+  }
+  #interactive-5{
+    position: absolute;
+    left: 582px;
+    width: 46px;
+    height: 35px;
+    top: -24px;
+  }
+  #text-1{
+    position: absolute;
+    top: -43px;
+  }
+  #text-2{
+    position: absolute;
+    left: 133px;
+    top: -25px;
     width: 50px;
-    padding: 5px;
-    float: right;
-    overflow: hidden;
-    right: 20%;
+  }
+  #text-3{
+    position: absolute;
+    left: 276px;
+    top: 163px;
+  }
+  #text-4{
+    position: absolute;
+    left: 425px;
+    top: -52px;
+  }
+  #text-5{
+    position: absolute;
+    left: 572px;
+    top: -63px;
+    width: 60px;
+  }
+  #text-6{
+    position: absolute;
+    top: -92px;
+    left: 240px;
+    width: 92px;
+  }
+  .info-text{
+    visibility: hidden;
+    font-weight:bold;
+  }
+
+  /* index-icons in main part of page CSS */
+
+ .icon-list {
+   display:inline-block;
+   width:100%;
+   margin-top:30px;
+ }
+  .icon-list li {
+    list-style:none;
+  }
+.icon-list-item {
+  max-width:25%;
+  margin:auto;
+  float:left;
+  padding-left:5%;
 }
 
-.some-text {
-    position: relative;
-    width: 100px;
-    padding: 5px;
-    float: right;
-    right: 20%;
-    font-size: 25px;
-    padding-top: 10px;
-}
+  .icon-list-item p {
+      width:100%;
+    margin:auto;
+      text-align: center;
+  }
 
-/* About side news */
-
-.news {
-    text-align: center;
-}
-
-.tv2 {
-    width: 20%;
-    height: 20%;
-    margin: 10px;
-}
-
-.udogse {
-    width: 20%;
-    height: 20%;
-    margin: 10px;
-}
-
-.moot {
-    width: 20%;
-    height: 20%;
-    margin: 10px;
-}
-
-.borsen {
-    width: 20%;
-    height: 20%;
-    margin: 10px;
-}
-
-.news {
-
-}
+    .index-icon {
+      max-width:100%;
+      padding:10px 0px;
+    }
