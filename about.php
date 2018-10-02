@@ -55,15 +55,20 @@
                 <p>Product design engineer from SDU with experience in user oriented design from e.g. LEGO.</p>
             </div>
         </div>
-        <div class="column">
-            <p class="team-text">The strong team behind Tendo works with great passion and has broad competence within the field. Even though Tendo is a newly established company, a wide network has already been established and the development is/has been supported by e.g. NASA (Houston), Ideon in Lund and Odense Robotics.<br/></p>
-            <p class="team-text">Tendo is a part of Odense Robotics and is thereby part of a cluster rewarded with the prestigious EU certificate Golden Label. The team has access to professional support within everything from development and prototyping to business management and matchmaking within the industry.</p>
+        <div>
+            <p>The strong team behind Tendo works with great passion and has broad competence within the field. Even though Tendo is a newly established company, a wide network has already been established and the development is/has been supported by e.g. NASA (Houston), Ideon in Lund and Odense Robotics.<br/></p>
+            <p>Tendo is a part of Odense Robotics and is thereby part of a cluster rewarded with the prestigious EU certificate Golden Label. The team has access to professional support within everything from development and prototyping to business management and matchmaking within the industry.</p>
         </div>
     </section>
   
     <section>
         <h2>Videomateriale</h2>
-        <p>Her skal være videomateriale om Tendo</p>
+        <div style="width:600px; height:400px; margin: 24px auto;">
+        <iframe style="" width="600" height="400"
+                src="https://www.youtube.com/embed/AkdQW0MN_mw">
+        </iframe>
+        </div>
+
     </section>
 
     <section class="news">
@@ -76,18 +81,19 @@
     </section>
 
     <section>
-        <h2>SoMe</h2>
-        <p>Her skal være Tendo SoMe-links</p>
-    </section>
-
-    <section>
         <h2>Pressemateriale</h2>
-        <p>Her skal være pressemateriale, som f.eks. logo</p>
+        <p>Herunder kan der hentes logo</p>
+        <a href="#" >Hvid med blå baggrund</a>
+        <a href="#" >Hvid uden baggrund</a>
+        <a href="#" >Sort med hvid baggrund</a>
+        <a href="#" >Sort uden baggrund</a>
     </section>
 
     <section>
-        <h2>Donationer</h2>
-        <p>Her skal være mulighed for at donere til Tendo</p>
+        <h2>Giv en hånd</h2>
+        <p></p>
+        <img width="300px" src="img/swish-logo.png">
+        <p>Swish nr: 1233 991 478</p>
     </section>
 
 </main>

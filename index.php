@@ -152,12 +152,17 @@
 
     <section>
         <h2>Mission</h2>
-        <p>Her skal der stå noget om, hvad Tendos mission er</p>
+        <p>Vores mission er at lave et produkt, hvor folk ikke føler sig begrænset i hverdagen.
+            Et produkt man som bruger, føler sig tilpas med, samtidigt med at få en forøget livskvalitet og mindre behov for hjælp udefra af samfundet og familie.
+        </p>
     </section>
 
     <section>
         <h2>Testimonials</h2>
-        <p>Her skal der stå, hvad folk siger om Tendo</p>
+        <p><em>"Efter at have været skeptisk i starten, syntes jeg det har været det hele værd at få anskaffet mig en Tendo Handske.
+                Den nedsatte bevægelsesevne i mine hænder har været en udfordring for mig og min familie. Det behøver vi ikke tænke på mere."</em><br/><br/>
+            - Anne M. 64 år. København.
+        </p>
     </section>
 
 
