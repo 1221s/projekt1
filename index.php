@@ -61,13 +61,8 @@
    </div>
 
    <script type="application/javascript">
-/*
-      document.getElementById("hand-index-info").onmouseover = function() {mouseOverIndex()};
-      document.getElementById("hand-index-info").onmouseleave = function() {mouseOutIndex()};
-      document.getElementById("hand-electronics-info").onmouseover = function() {mouseOverElectronics()};
-      document.getElementById("hand-electronics-info").onmouseleave = function() {mouseOutElectronics()};
-      var handInfo = document.querySelectorAll('hand-info');
-*/
+       /* Gammel kode
+
       function mouseOverIndex(caller) {
         var text;
         if(caller.id == "interactive-1"){
@@ -108,15 +103,47 @@
         text.style.visibility = "hidden";
           //handInfo.style.display = "none";
       }
-/*
-      function mouseOverElectronics() {
-          document.getElementById("hand-electronics-info").style.display = "block";
-      }
-      function mouseOutElectronics() {
-          handInfo.style.display = "none";
-      }
-      */
+       */
   </script>
+
+        <script type="application/javascript">
+            function mouseOverIndex(caller) {
+                switch (caller.id) {
+                    case 'interactive-1':
+                        document.getElementById("text-1").style.visibility = "visible";
+                        break;
+                    case 'interactive-2':
+                        document.getElementById("text-2").style.visibility = "visible";
+                        break;
+                    case 'interactive-3':
+                        document.getElementById("text-3").style.visibility = "visible";
+                        break;
+                    case 'interactive-4':
+                        document.getElementById("text-4").style.visibility = "visible";
+                        break;
+                    case 'interactive-5':
+                        document.getElementById("text-5").style.visibility = "visible";
+                }
+            }
+            function mouseOutIndex(caller) {
+                switch (caller.id) {
+                    case 'interactive-1':
+                        document.getElementById("text-1").style.visibility = "hidden";
+                        break;
+                    case 'interactive-2':
+                        document.getElementById("text-2").style.visibility = "hidden";
+                        break;
+                    case 'interactive-3':
+                        document.getElementById("text-3").style.visibility = "hidden";
+                        break;
+                    case 'interactive-4':
+                        document.getElementById("text-4").style.visibility = "hidden";
+                        break;
+                    case 'interactive-5':
+                        document.getElementById("text-5").style.visibility = "hidden";
+                }
+            }
+        </script>
 
 
     <div id="hand-background">
@@ -124,7 +151,7 @@
         <div class="hand-hover-wrapper">
             <!-- INDEX FINGER LINK -->
             <div id="hand-index">
-                <a id="interactive-1" class="hand-link" onmouseover="mouseOverIndex(this);" onmouseleave="mouseOutIndex(this);"></a>
+                <a id="interactive-1" class="hand-link" onmouseover="mouseOverIndex(this)" onmouseleave="mouseOutIndex(this);"></a>
                 <a id="interactive-2" class="hand-link" onmouseover="mouseOverIndex(this);" onmouseleave="mouseOutIndex(this);"></a>
                 <a id="interactive-3" class="hand-link" onmouseover="mouseOverIndex(this);" onmouseleave="mouseOutIndex(this);"></a>
                 <a id="interactive-4" class="hand-link" onmouseover="mouseOverIndex(this);" onmouseleave="mouseOutIndex(this);"></a>
